@@ -17,7 +17,7 @@
 
 ### Def. measure
 
-A measure \vert ·\vert  is a function $R^n\supset \Omega\to \vert \Omega\vert \in R$ s.t.
+A measure \vert \cdot\vert  is a function $R^n\supset \Omega\to \vert \Omega\vert \in R$ s.t.
 
 (i) $\vert A\vert \geq 0$
 
@@ -261,7 +261,7 @@ $\forall \pi:a=x_0<x_1< \dots <x_n=b,\vert \vert \pi\vert \vert <\delta$, each o
 
 $\sum_{i=0}^{n-1}\omega_j\Delta x_j=\sum_{case (i)}\omega_j\Delta x_j+\sum_{case (ii)}\omega_j\Delta x_j$
 
-$<2\vert \vert f\vert \vert _\infty\sum_{case (i)}\Delta x_j+2\epsilon\sum_{case (ii)}\Delta x_j<2\vert \vert f\vert \vert _\infty\epsilon+2(b-a)\epsilon$
+$<2\vert \vert f\vert \vert_\infty\sum_{case (i)}\Delta x_j+2\epsilon\sum_{case (ii)}\Delta x_j<2\vert \vert f\vert \vert_\infty\epsilon+2(b-a)\epsilon$
 
 i.e. $f\in R[a,b]$
 
@@ -299,7 +299,7 @@ $\forall\epsilon>0,\exists \delta_i,>0$ s.t. if $\vert \vert \pi_i\vert \vert <\
 
 choose $\delta=\min\lbrace\delta_1,\delta_2,\epsilon\rbrace,\forall \vert \vert \pi\vert \vert <\delta$, we have $\vert \vert \pi_1\vert \vert <\delta_1,\vert \vert \pi_2\vert \vert <\delta_2$
 
-$\sum_\pi\omega_j\Delta x_j\leq\sum_\pi\omega_j\Delta x_j+\sum_\pi\omega_j\Delta x_j+2\vert \vert f\vert \vert _\infty\vert \vert \pi\vert \vert < 2\epsilon+2\vert \vert f\vert \vert _\infty\epsilon$
+$\sum_\pi\omega_j\Delta x_j\leq\sum_\pi\omega_j\Delta x_j+\sum_\pi\omega_j\Delta x_j+2\vert \vert f\vert \vert_\infty\vert \vert \pi\vert \vert < 2\epsilon+2\vert \vert f\vert \vert_\infty\epsilon$
 
 i.e. $f\in R[a,b]$
 
@@ -345,7 +345,7 @@ Let $f\in R[a,b]$, define $F(x):=\int_a^x f$
 
 (2) if $f$ is continuous at $\xi\in[a,b],F'(\xi)=f(\xi)$
 
-Proof. (1) $\forall x<y\in [a,b],\vert F(y)-F(x)\vert =\vert \int_a^y f-\int_a^x f\vert =\vert \int_x^y f\vert \leq \vert \vert f\vert \vert _\infty\vert y-x\vert $
+Proof. (1) $\forall x<y\in [a,b],\vert F(y)-F(x)\vert =\vert \int_a^y f-\int_a^x f\vert =\vert \int_x^y f\vert \leq \vert \vert f\vert \vert_\infty\vert y-x\vert $
 
 (2) $\forall \epsilon>0,\exists \delta>0$ s.t. if $\vert x-\xi\vert <\delta,\vert f(x)-f(\xi)\vert <\epsilon$
 
@@ -355,19 +355,19 @@ i.e. $F'(\xi)=\lim_{x\to\xi}\frac{F(x)-F(\xi)}{x-\xi}=f(\xi)$
 
 ### Thm. Newton-Leibniz Formula
 
-Let $F'=f\in R[a,b]$, then $\int_a^bf=F(b)-F(a)=F\vert _a^b$
+Let $F'=f\in R[a,b]$, then $\int_a^bf=F(b)-F(a)=F\vert_a^b$
 
-Proof. $F\vert _a^b=\sum_{j=0}^{n-1}(F(x_{j+1})-F(x_j))=\sum_{j=0}^{n-1}F'(\xi_j)\Delta x_j,\xi_j\in I_j$
+Proof. $F\vert_a^b=\sum_{j=0}^{n-1}(F(x_{j+1})-F(x_j))=\sum_{j=0}^{n-1}F'(\xi_j)\Delta x_j,\xi_j\in I_j$
 
 $=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j\to\int_a^b f$ as $\vert \vert \pi\vert \vert \to 0$
 
-i.e. $\int_a^bf=F(b)-F(a)=F\vert _a^b$
+i.e. $\int_a^bf=F(b)-F(a)=F\vert_a^b$
 
 Rmk. if $F\in C[a,b]$ is differentiable everywhere except some finite points, the formula is still correct
 
 assume the indifferentiable points are $x_1, \dots ,x_n$
 
-$\int_a^bf=\int_a^{x_1}f+ \dots +\int_{x_n}^bf=F\vert _a^{x_1}+ \dots +F\vert _{x_n}^b=F\vert _a^b$
+$\int_a^bf=\int_a^{x_1}f+ \dots +\int_{x_n}^bf=F\vert_a^{x_1}+ \dots +F\vert_{x_n}^b=F\vert_a^b$
 
 #### Cor.
 
@@ -383,7 +383,7 @@ Proof. let $F(x)=\int_a^x f$, then $F'=f$
 
 note that $\frac{d}{dx}(F\circ\phi)(x)=f\circ\phi\cdot\phi'$
 
-$\int_\alpha^\beta f\circ\phi\cdot\phi'=(F\circ\phi)\vert _\alpha^\beta=F_a^b=\int_a^bf$
+$\int_\alpha^\beta f\circ\phi\cdot\phi'=(F\circ\phi)\vert_\alpha^\beta=F_a^b=\int_a^bf$
 
 ### Thm. change of variable-strong form
 
@@ -395,7 +395,7 @@ Proof. assume $\phi\uparrow$, let $\pi:\alpha=t_0<t_1< \dots <t_n=\beta$
 
 write $x_j=\phi(t_j)$, then $\pi':a=x_0\leq x_1\leq  \dots \leq x_n=b$ is a partition of $[a,b]$
 
-note that $\Delta x_j=\phi(t_{j+1})-\phi(t_j)=\phi'(\xi_j)\Delta t_j,\vert \vert \pi'\vert \vert \leq \vert \vert \phi'\vert \vert _\infty\vert \vert \pi\vert \vert $
+note that $\Delta x_j=\phi(t_{j+1})-\phi(t_j)=\phi'(\xi_j)\Delta t_j,\vert \vert \pi'\vert \vert \leq \vert \vert \phi'\vert \vert_\infty\vert \vert \pi\vert \vert $
 
 consider $S_n:=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j$ and $T_n:=\sum_{j=0}^{n-1} f(\phi(\eta_j))\phi'(\eta_j)\Delta t_j, \forall\xi_j\in[x_j,x_{j+1}],\eta_j\in [t_j,t_{j+1}]$, clearly, $S_n\to \int_a^bf,T_n\to \int_\alpha^\beta f\circ\phi\cdot\phi'$
 
@@ -403,9 +403,9 @@ $S_n-T_n=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-\sum_{j=0}^{n-1} f(\phi(\eta_j))\phi
 
 $=\sum_{j=0}^{n-1}(f(\xi_j)-f(\phi(\eta_j)))\Delta x_j+\sum_{j=0}^{n-1} f(\phi(\eta_j))(\Delta x_j-\phi'(\eta_j)\Delta t_j)$
 
-$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}\vert \vert f\vert \vert _\infty(\phi'(\theta_j)-\phi'(\eta_j))\Delta t_j$
+$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}\vert \vert f\vert \vert_\infty(\phi'(\theta_j)-\phi'(\eta_j))\Delta t_j$
 
-$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}\vert \vert f\vert \vert _\infty\omega_j(\phi')\Delta t_j\to 0$, as $\vert \vert \pi\vert \vert $, together with $\vert \vert \pi'\vert \vert ,\to 0$
+$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}\vert \vert f\vert \vert_\infty\omega_j(\phi')\Delta t_j\to 0$, as $\vert \vert \pi\vert \vert $, together with $\vert \vert \pi'\vert \vert ,\to 0$
 
 $S_n$ and $T_n$ has the same limit, i.e.$\int_{\phi(\alpha)}^{\phi(\beta)}f=\int_\alpha^\beta f\circ\phi\cdot\phi'$
 
@@ -413,15 +413,15 @@ $S_n$ and $T_n$ has the same limit, i.e.$\int_{\phi(\alpha)}^{\phi(\beta)}f=\int
 
 let u,v be differentiable on $[a,b],u',v'\in R[a,b]$, then
 
-$\int_a^b udv=uv\vert _a^b-\int_a^bvdu$
+$\int_a^b udv=uv\vert_a^b-\int_a^bvdu$
 
-Proof. $uv\vert _a^b=\int_a^b(uv)'=\int_a^budv+\int_a^bvdu$
+Proof. $uv\vert_a^b=\int_a^b(uv)'=\int_a^budv+\int_a^bvdu$
 
 ### Thm. integral by parts-strong form
 
 let $f,g\in R[a,b]$, define $F(x)=\int_a^xf,G(x)=\int_a^xg$, then
 
-$\int_a^bFg=FG\vert _a^b-\int_a^bfG$
+$\int_a^bFg=FG\vert_a^b-\int_a^bfG$
 
 Proof. let $f_n,g_n$ be piecewise affine s.t. $\int_a^b\vert f_n-f\vert \to 0,\int_a^b \vert g_n-g\vert \to 0,$ as $n\to \infty$
 
@@ -435,17 +435,17 @@ note that $F_n,G_n$ are differentiable on each $[x_j,x_{j+1}]$
 
 thus, $\int_a^bF_ng_n=\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}F_ng_n$
 
-$=\sum_{j=0}^{n-1}F_nG_n\vert _{x_j}^{x_{j+1}}-\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}f_nG_n=F_nG_n\vert _a^b-\int_a^bf_nG_n(\ast)$
+$=\sum_{j=0}^{n-1}F_nG_n\vert_{x_j}^{x_{j+1}}-\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}f_nG_n=F_nG_n\vert_a^b-\int_a^bf_nG_n(\ast)$
 
 $\vert \int_a^bF_ng_n-\int_a^bFg\vert \leq\vert \int_a^bF_n(g_n-g)\vert +\vert \int_a^bg\vert F_n-F\vert $
 
-$\leq\vert \vert F\vert \vert _\infty\int_a^b\vert g_n-g\vert +\vert \vert g\vert \vert _\infty\int_a^b\vert F_n-F\vert $
+$\leq\vert \vert F\vert \vert_\infty\int_a^b\vert g_n-g\vert +\vert \vert g\vert \vert_\infty\int_a^b\vert F_n-F\vert $
 
-$\leq (b-a)\vert \vert f\vert \vert _\infty\int_a^b\vert g_n-g\vert +\vert \vert g\vert \vert _\infty\int_a^b\int_a^b\vert f_n-f\vert \to 0$, as $n\to\infty$
+$\leq (b-a)\vert \vert f\vert \vert_\infty\int_a^b\vert g_n-g\vert +\vert \vert g\vert \vert_\infty\int_a^b\int_a^b\vert f_n-f\vert \to 0$, as $n\to\infty$
 
 similarly, $\int_a^bG_nf_n\to\int_a^bGf$, as $n\to\infty$
 
-let $(\ast)$ attain its limit, $\int_a^bFg=FG\vert _a^b-\int_a^bfG$
+let $(\ast)$ attain its limit, $\int_a^bFg=FG\vert_a^b-\int_a^bfG$
 
 ### Thm. the second mean value thm
 
@@ -469,23 +469,23 @@ let $f_n,g_n$ be piecewise affine s.t. $\int_a^b\vert f_n-f\vert \to 0,\int_a^b 
 
 define $F_n(x)=\int_a^xf_n,G_n(x)=\int_a^xg_n$
 
-(1) $\int_a^bf_ng_n=F_ng_n\vert _a^b-\int_a^bF_ng_n'$
+(1) $\int_a^bf_ng_n=F_ng_n\vert_a^b-\int_a^bF_ng_n'$
 
-by the first mean value thm, $=F_ng_n\vert _a^b-F_n(\zeta_n)\int_a^bg_n'$
+by the first mean value thm, $=F_ng_n\vert_a^b-F_n(\zeta_n)\int_a^bg_n'$
 
-$=F_ng_n\vert _a^b-F_n(\zeta_n)(g(b)-g(a))$
+$=F_ng_n\vert_a^b-F_n(\zeta_n)(g(b)-g(a))$
 
-let $n\to \infty,\int_a^bfg=Fg\vert _a^b-\lim_{n\to\infty}F_n(\zeta_n)(g(b)-g(a))$
+let $n\to \infty,\int_a^bfg=Fg\vert_a^b-\lim_{n\to\infty}F_n(\zeta_n)(g(b)-g(a))$
 
 by bolzano-weierstrass,$\exists \zeta_{n_j}\to\xi$, WLOG, assume $\zeta_n\to\zeta$
 
 $\vert F_n(\zeta_n)-F(\zeta)\vert \leq \vert F_n(\zeta_n)-F(\zeta_n)\vert +\vert F(\zeta_n)-F(\zeta)\vert \to 0$, as $n\to\infty$
 
-thus, $\int_a^bfg=Fg\vert _a^b-F(\zeta)(g(b)-g(a))$
+thus, $\int_a^bfg=Fg\vert_a^b-F(\zeta)(g(b)-g(a))$
 
 $=(F(b)-F(\zeta))g(b)+(F(\zeta)-F(a))g(a)=g(a)\int_a^\zeta f+g(b)\int_\zeta^b f$
 
-(2) as $\int_a^bfg=Fg\vert _a^b-F(\zeta)(g(b)-g(a))=F(b)g(b)+(g(a)-g(b))F(\zeta)$
+(2) as $\int_a^bfg=Fg\vert_a^b-F(\zeta)(g(b)-g(a))=F(b)g(b)+(g(a)-g(b))F(\zeta)$
 
 $\int_a^b fg\leq \max F g(b)+(g(a)-g(b))\max F=g(a)\max F$
 
@@ -556,33 +556,33 @@ Rmk. a normed space is a metric space with $d(x,y):=\vert \vert x-y\vert \vert $
 
 ### Thm. Holder inequality
 
-let $f,g\in R[a,b],\frac{1}{p}+\frac{1}{q}=1,p,q>0$, then $\vert \vert fg\vert \vert _1\leq \vert \vert f\vert \vert _p\vert \vert g\vert \vert _q$
+let $f,g\in R[a,b],\frac{1}{p}+\frac{1}{q}=1,p,q>0$, then $\vert \vert fg\vert \vert_1\leq \vert \vert f\vert \vert_p\vert \vert g\vert \vert_q$
 
-where for each $\phi\in R[a,b],\vert \vert \phi\vert \vert _p:=(\int_a^b\vert \phi\vert ^p)^\frac{1}{p}$
+where for each $\phi\in R[a,b],\vert \vert \phi\vert \vert_p:=(\int_a^b\vert \phi\vert ^p)^\frac{1}{p}$
 
-Proof. WLOG, assume $\vert \vert f\vert \vert _p\vert \vert g\vert \vert _q>0$, since $y=e^x$ is convex
+Proof. WLOG, assume $\vert \vert f\vert \vert_p\vert \vert g\vert \vert_q>0$, since $y=e^x$ is convex
 
 $\forall a,b>0,ab=e^{\frac{1}{p}lna^p+\frac{1}{q}lnb^q}\leq \frac{1}{p}e^{lna^p}+\frac{1}{q}e^{lnb^q}=\frac{1}{p}a^p+\frac{1}{q}b^q$
 
-$\frac{\vert \vert fg\vert \vert _1}{\vert \vert f\vert \vert _p\vert \vert g\vert \vert _q}=\int_a^b\frac{\vert f\vert }{\vert \vert f\vert \vert _p}\frac{\vert g\vert }{\vert \vert g\vert \vert _q}\leq\int_a^b(\frac{1}{p}\frac{\vert f\vert ^p}{\vert \vert f\vert \vert _p^p}+\frac{1}{q}\frac{\vert g\vert ^p}{\vert \vert g\vert \vert _q^q})=\frac{1}{p}+\frac{1}{q}=1$
+$\frac{\vert \vert fg\vert \vert_1}{\vert \vert f\vert \vert_p\vert \vert g\vert \vert_q}=\int_a^b\frac{\vert f\vert }{\vert \vert f\vert \vert_p}\frac{\vert g\vert }{\vert \vert g\vert \vert_q}\leq\int_a^b(\frac{1}{p}\frac{\vert f\vert ^p}{\vert \vert f\vert \vert_p^p}+\frac{1}{q}\frac{\vert g\vert ^p}{\vert \vert g\vert \vert_q^q})=\frac{1}{p}+\frac{1}{q}=1$
 
-i.e. $\vert \vert fg\vert \vert _1\leq \vert \vert f\vert \vert _p\vert \vert g\vert \vert _q$
+i.e. $\vert \vert fg\vert \vert_1\leq \vert \vert f\vert \vert_p\vert \vert g\vert \vert_q$
 
 ### Thm. Minkovski inequality
 
-let $f,g\in R[a,b]$, for $\forall 1\leq p\leq +\infty,\vert \vert f+g\vert \vert _p\leq \vert \vert f\vert \vert _p+\vert \vert g\vert \vert _p$
+let $f,g\in R[a,b]$, for $\forall 1\leq p\leq +\infty,\vert \vert f+g\vert \vert_p\leq \vert \vert f\vert \vert_p+\vert \vert g\vert \vert_p$
 
 Proof. if $p=+\infty$, obviously $\sup(f+g)\leq \sup f+\sup g$
 
-for $1\leq p<+\infty,\vert \vert f+g\vert \vert _p^p=\int_a^b\vert f+g\vert ^p\leq \int_a^b(\vert f\vert +\vert g\vert )\vert f+g\vert ^{p-1}$
+for $1\leq p<+\infty,\vert \vert f+g\vert \vert_p^p=\int_a^b\vert f+g\vert ^p\leq \int_a^b(\vert f\vert +\vert g\vert )\vert f+g\vert ^{p-1}$
 
 by Holder inequality, $\leq (\int_a^b\vert f\vert ^p)^\frac{1}{p}(\int_a^b\vert f+g\vert ^{(p-1)q})^\frac{1}{q}+(\int_a^b\vert g\vert ^p)^\frac{1}{p}(\int_a^b\vert f+g\vert ^{(p-1)q})^\frac{1}{q}$
 
-$=(\vert \vert f\vert \vert _p+\vert \vert g\vert \vert _p)\vert \vert f+g\vert \vert _p^{\frac{p}{q}}$
+$=(\vert \vert f\vert \vert_p+\vert \vert g\vert \vert_p)\vert \vert f+g\vert \vert_p^{\frac{p}{q}}$
 
-thus, $\vert \vert f+g\vert \vert _p=\vert \vert f+g\vert \vert _p^{p-\frac{p}{q}}\leq \vert \vert f\vert \vert _p+\vert \vert g\vert \vert _p$
+thus, $\vert \vert f+g\vert \vert_p=\vert \vert f+g\vert \vert_p^{p-\frac{p}{q}}\leq \vert \vert f\vert \vert_p+\vert \vert g\vert \vert_p$
 
-Rmk: the discrete form of Minkovski inequality is $\vert \vert x+y\vert \vert _p\leq \vert \vert x\vert \vert _p+\vert \vert y\vert \vert _p,\forall x,y\in R^n$, where $\vert \vert x\vert \vert _p:=(\sum_{j=1}^n\vert x_j\vert ^p)^\frac{1}{p}$, and the proof is similar
+Rmk: the discrete form of Minkovski inequality is $\vert \vert x+y\vert \vert_p\leq \vert \vert x\vert \vert_p+\vert \vert y\vert \vert_p,\forall x,y\in R^n$, where $\vert \vert x\vert \vert_p:=(\sum_{j=1}^n\vert x_j\vert ^p)^\frac{1}{p}$, and the proof is similar
 
 
 
@@ -1195,7 +1195,7 @@ $\forall x\neq 0\in R^d,s_1\leq \vert \vert A\frac{x}{\vert \vert x\vert \vert }
 
 ### Thm.
 
-let $F\in C^1(\Omega,R^d),p\in\Omega\subset R^d$, if $DF(p)$ is invertible, then $\exists U$: neighborhood of $p$ and $\sigma>0$ s.t. $\vert \vert F(x)-F(y)\vert \vert \geq \sigma\vert \vert x-y\vert \vert ,\forall x,y\in U$, in particular, $F\vert _U$ is injective
+let $F\in C^1(\Omega,R^d),p\in\Omega\subset R^d$, if $DF(p)$ is invertible, then $\exists U$: neighborhood of $p$ and $\sigma>0$ s.t. $\vert \vert F(x)-F(y)\vert \vert \geq \sigma\vert \vert x-y\vert \vert ,\forall x,y\in U$, in particular, $F\vert_U$ is injective
 
 Proof. $det DF(p)\neq 0\Rightarrow \exists \sigma>0,\vert \vert DF(p)\eta\vert \vert \geq 3\sigma\vert \vert \eta\vert \vert ,\forall \eta\in R^d$
 
@@ -1229,7 +1229,7 @@ $y_0\in F(\Omega),B_{\frac{\lambda\delta}{4}}(F(x))\in F(\Omega)$, i.e. $F(x)$ i
 
 let $F\in C^k(\Omega,R^d)$ and DF be invertible at $p\in\Omega$, then $\exists U$: neighborhood of $p$ and $V$: neighborhood of $F(p)$ s.t. $F:U\to V$ is bijective and $F^{-1}\in C^k(V,U)$
 
-Proof. by the latest two thms, $\exists U$: neighborhood of $p,F\vert _U$ is injective, let $V:=F(U),V$ is open, i.e. $V$ is a neighborhood of $F(p)$, then $F:U\to V$ is bijective
+Proof. by the latest two thms, $\exists U$: neighborhood of $p,F\vert_U$ is injective, let $V:=F(U),V$ is open, i.e. $V$ is a neighborhood of $F(p)$, then $F:U\to V$ is bijective
 
 it suffices to show $F^{-1}\in C^k(V,U)$
 
@@ -2069,9 +2069,9 @@ let $\omega=\sum_Ia_I(x)dx_I$ be a standard presentation of a k-form in $E\subse
 
 Proof. if not, $\exists a_J\neq 0,J=(j_1, \dots ,j_k)$, WLOG, $\exists x\in E,a_J(x)>0$
 
-by the continuity of $a_J,\exists\delta>0$ s.t. the box $G:=\lbrace y\vert \vert \vert y-x\vert \vert _\infty\leq\delta\rbrace$ satisfies $a_I(y)>0,\forall y\in G$
+by the continuity of $a_J,\exists\delta>0$ s.t. the box $G:=\lbrace y\vert \vert \vert y-x\vert \vert_\infty\leq\delta\rbrace$ satisfies $a_I(y)>0,\forall y\in G$
 
-define $D:=\lbrace x\in R^k\vert \vert \vert x\vert \vert _\infty\leq\delta\rbrace$ and $\Phi(u):=x+\sum_{r=1}^k u_re_{j_r}$
+define $D:=\lbrace x\in R^k\vert \vert \vert x\vert \vert_\infty\leq\delta\rbrace$ and $\Phi(u):=x+\sum_{r=1}^k u_re_{j_r}$
 
 note that if $I\neq J,det\frac{\partial x_I}{\partial u}=0$, and $det\frac{\partial x_J}{\partial u}=1$
 
@@ -2393,7 +2393,7 @@ $=k\sum_I(\int_0^1 t^{k-1}a_I(tx)dt)dx_I+\sum_I\sum_{m=1}^n(\int_0^1t^k\partial_
 
 $=\sum_I(\int_0^1a_I(tx)dt^k)dx_I+\sum_I(\int_0^1t^kda_I(tx)) dx_I$
 
-$=\sum_I(t^ka_I(tx))\vert _0^1dx_I=\sum_Ia_I(x)dx_I=\omega$
+$=\sum_I(t^ka_I(tx))\vert_0^1dx_I=\sum_Ia_I(x)dx_I=\omega$
 
 thus, if $\omega$ is closed, $\omega=d(L\omega)$, i.e. $\omega$ is exact
 
