@@ -17,15 +17,15 @@
 
 ### Def. measure
 
-A measure |·| is a function $R^n\supset \Omega\to |\Omega|\in R$ s.t.
+A measure \vert ·\vert  is a function $R^n\supset \Omega\to \vert \Omega\vert \in R$ s.t.
 
-(i) $|A|\geq 0$
+(i) $\vert A\vert \geq 0$
 
-(ii) $A\subset B\Rightarrow |A|\leq |B|$
+(ii) $A\subset B\Rightarrow \vert A\vert \leq \vert B\vert $
 
-(iii) $A_j,j\in N$ are mutually dispoint implies that $|\cup_{j\in N}A_j|=\sum_{j\in N}|A_j|$
+(iii) $A_j,j\in N$ are mutually dispoint implies that $\vert \cup_{j\in N}A_j\vert =\sum_{j\in N}\vert A_j\vert $
 
-(iv) Let $C=[0,1]^n\subset R^n$ be a n-D cube, then $0<|C|<\infty$
+(iv) Let $C=[0,1]^n\subset R^n$ be a n-D cube, then $0<\vert C\vert <\infty$
 
 ### Axiom of choice
 
@@ -53,9 +53,9 @@ Rmks:
 
 ### Thm.
 
-there exists a bounded subset $A \in R$ so that $|A|$ does not exist!
+there exists a bounded subset $A \in R$ so that $\vert A\vert $ does not exist!
 
-Proof. $\forall x\in [0,1),$ define $A_x=\lbrace y\in [0,1)|y-x\in Q\rbrace$
+Proof. $\forall x\in [0,1),$ define $A_x=\lbrace y\in [0,1)\vert y-x\in Q\rbrace$
 
 claim 1: $A_{x_1}\neq A_{x_2}\Rightarrow A_{x_1}\cap A_{x_2}=\emptyset$
 
@@ -63,7 +63,7 @@ by A.C., we can choose an element of each $A_x$ to form a set A
 
 as $Q\cap (0,1)$ is countable, write it as $\lbrace r_1,r_2,\dots,r_n, \dots \rbrace$
 
-define $A_i=r_i+A=\lbrace r_i+s|s\in A\rbrace$, clearly, $A_i\in (-1,2)$
+define $A_i=r_i+A=\lbrace r_i+s\vert s\in A\rbrace$, clearly, $A_i\in (-1,2)$
 
 claim 2: $A_i\cap A_j=\emptyset$ for $i\neq j$
 
@@ -71,37 +71,37 @@ claim 3: $[0,1)\subset \cup_{j=1}^\infty A_j$
 
 then $[0,1)\subset \cup_{j=1}^\infty A_j\subset (-1,2)$
 
-as $|A_j|=|A|, 1\leq |A|\cdot\infty\leq 3$, which means $|A|$ does not exist
+as $\vert A_j\vert =\vert A\vert , 1\leq \vert A\vert \cdot\infty\leq 3$, which means $\vert A\vert $ does not exist
 
 ### Def. partition
 
 $\pi:a=x_0<x_1< \dots <x_n=b$ is called a partition of $[a,b]$
 
-$\Delta x_j:=x_{j+1}-x_j,I_j:=[x_j,x_{j+1}],||\pi||:=\max\lbrace \Delta x_j\rbrace$
+$\Delta x_j:=x_{j+1}-x_j,I_j:=[x_j,x_{j+1}],\vert \vert \pi\vert \vert :=\max\lbrace \Delta x_j\rbrace$
 
 ### Def. Riemann integral
 
 Given $f:[a,b]\to R$ and $A\in R$
 
-if $\forall \epsilon>0,\exists\delta>0$ s.t. if $||\pi||<\delta,|\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-A|<\epsilon,\forall\xi_j\in I_j$
+if $\forall \epsilon>0,\exists\delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta,\vert \sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-A\vert <\epsilon,\forall\xi_j\in I_j$
 
 then we say that $f$ is Riemann integrable on $[a,b]$ and $\int_a^bf(x)dx:=A$
 
 $S_n:=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j$ is called the Riemann sum
 
-$R[a,b]:=\lbrace f|f$ is Riemann integrable on $[a,b]\rbrace$
+$R[a,b]:=\lbrace f\vert f$ is Riemann integrable on $[a,b]\rbrace$
 
 ### Thm.
 
 f is Riemann integrable $\Rightarrow$ $f$ is bounded
 
-Proof. for $\epsilon=1,\exists\delta>0$ s.t. if $||\pi||<\delta$
+Proof. for $\epsilon=1,\exists\delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta$
 
-$|\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-\int_a^b f|<\epsilon,\forall \xi_j\in I_j$
+$\vert \sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-\int_a^b f\vert <\epsilon,\forall \xi_j\in I_j$
 
 suppose $f$ is unbounded on $I_k$, fix $\xi_j=x_j,\forall j\neq k$
 
-then $|f(\xi_k)\Delta x_k+\sum_{j\neq k}f(x_j)\Delta x_j-\int_a^b f|<\epsilon=1,\forall \xi_k\in I_k$
+then $\vert f(\xi_k)\Delta x_k+\sum_{j\neq k}f(x_j)\Delta x_j-\int_a^b f\vert <\epsilon=1,\forall \xi_k\in I_k$
 
 which shows $f(x)$ is bounded on $I_k$, contradicts!
 
@@ -121,7 +121,7 @@ $\pi'$ is called the refinement of $\pi$ if all the partition points of $\pi$ ar
 
 ### Thm.
 
-Let $\pi'<\pi$, assume $\pi'$ has k more partition points than $\pi$, then $S(\pi)-k||\pi||(\sup f-\inf f)\leq S(\pi')\leq S(\pi)\\ S(\pi)+k||\pi||(\sup f-\inf f)\geq s(\pi')\geq s(\pi)$
+Let $\pi'<\pi$, assume $\pi'$ has k more partition points than $\pi$, then $S(\pi)-k\vert \vert \pi\vert \vert (\sup f-\inf f)\leq S(\pi')\leq S(\pi)\\ S(\pi)+k\vert \vert \pi\vert \vert (\sup f-\inf f)\geq s(\pi')\geq s(\pi)$
 
 Proof. it suffices to consider the situation that $\pi'$ has one more partition point than $\pi$
 
@@ -135,7 +135,7 @@ $\leq (x'-a)\sup_{[a,b]}f+(b-x')\sup_{[a,b]}f=S(\pi)$
 
 also, $S(\pi')\geq (x'-a)\inf_{[a,b]}f+(b-x')\inf_{[a,b]}f$
 
-$=S(\pi)-(b-a)(\sup_{[a,b]}f-\inf_{[a,b]}f)\geq S(\pi)-||\pi||(\sup f-\inf f)$
+$=S(\pi)-(b-a)(\sup_{[a,b]}f-\inf_{[a,b]}f)\geq S(\pi)-\vert \vert \pi\vert \vert (\sup f-\inf f)$
 
 #### Cor.
 
@@ -143,35 +143,35 @@ $\forall\pi,\pi',S(\pi)\geq s(\pi')$
 
 ### Thm.
 
-$\inf_\pi S(\pi)=\lim_{||\pi||\to 0}S(\pi),\sup_\pi s(\pi)=\lim_{||\pi||\to 0}s(\pi)$
+$\inf_\pi S(\pi)=\lim_{\vert \vert \pi\vert \vert \to 0}S(\pi),\sup_\pi s(\pi)=\lim_{\vert \vert \pi\vert \vert \to 0}s(\pi)$
 
 Proof. $\forall\epsilon>0,\exists \pi'$ s.t. $S(\pi')<\inf_\pi S(\pi)+\epsilon$
 
 assume $\pi'$ has k partition points, choose $\delta=\frac{\epsilon}{k(\sup f-\inf f)}$, then
 
-$\forall \pi$ satisfies $||\pi||<\delta$, consider $\pi'':=\pi\cup \pi'$
+$\forall \pi$ satisfies $\vert \vert \pi\vert \vert <\delta$, consider $\pi'':=\pi\cup \pi'$
 
 on the one hand, $S(\pi'')\leq S(\pi')<\inf_\pi S(\pi)+\epsilon$
 
-on the other hand, $S(\pi'')\geq S(\pi)-k||\pi||(\sup f-\inf f)$
+on the other hand, $S(\pi'')\geq S(\pi)-k\vert \vert \pi\vert \vert (\sup f-\inf f)$
 
-i.e. $S(\pi)\leq S(\pi'')+k||\pi||(\sup f-\inf f)<\inf_\pi S(\pi)+2\epsilon$
+i.e. $S(\pi)\leq S(\pi'')+k\vert \vert \pi\vert \vert (\sup f-\inf f)<\inf_\pi S(\pi)+2\epsilon$
 
-i.e. $\lim_{||\pi||\to 0}S(\pi)=\inf_\pi S(\pi)$
+i.e. $\lim_{\vert \vert \pi\vert \vert \to 0}S(\pi)=\inf_\pi S(\pi)$
 
 ### Thm.
 
-assume $f:[a,b]\to R$ is bounded, then $f\in R[a,b]$ iff $\lim_{||\pi||\to 0}\sum_{j=0}^{n-1}\omega_j\Delta x_j=0$
+assume $f:[a,b]\to R$ is bounded, then $f\in R[a,b]$ iff $\lim_{\vert \vert \pi\vert \vert \to 0}\sum_{j=0}^{n-1}\omega_j\Delta x_j=0$
 
-Proof. $\Rightarrow \forall \epsilon>0,\exists\delta>0$ s.t. if $||\pi||<\delta$
+Proof. $\Rightarrow \forall \epsilon>0,\exists\delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta$
 
-$|\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-\int_a^b f|<\epsilon,\forall \xi_j\in I_j$
+$\vert \sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-\int_a^b f\vert <\epsilon,\forall \xi_j\in I_j$
 
 $\int_a^bf-\epsilon\leq\sum_{j=0}^{n-1}m_j\Delta x_j\leq\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j\leq\sum_{j=0}^{n-1}M_j\Delta x_j\leq\int_a^b f+\epsilon$
 
-$0\leq \sum_{j=0}^{n-1}\omega_j\Delta x_j\leq 2\epsilon,\lim_{||\pi||\to 0}\sum_{j=0}^{n-1}\omega_j\Delta x_j=0$
+$0\leq \sum_{j=0}^{n-1}\omega_j\Delta x_j\leq 2\epsilon,\lim_{\vert \vert \pi\vert \vert \to 0}\sum_{j=0}^{n-1}\omega_j\Delta x_j=0$
 
-$\Leftarrow \forall\epsilon>0,\exists \delta>0,$ s.t. if $||\pi||<\delta$
+$\Leftarrow \forall\epsilon>0,\exists \delta>0,$ s.t. if $\vert \vert \pi\vert \vert <\delta$
 
 $S(\pi)-s(\pi)=\sum_{j=0}^{n-1}\omega_j\Delta x_j<\epsilon$
 
@@ -183,19 +183,19 @@ $\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-A\leq \sum_{j=0}^{n-1}M_j\Delta x_j-A=S(\pi)
 
 similarly, $\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-A>-\epsilon$
 
-$|\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-A|<\epsilon,$ i.e. $f\in R[a,b]$
+$\vert \sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-A\vert <\epsilon,$ i.e. $f\in R[a,b]$
 
 ### Thm.
 
-assume $f:[a,b]\to R$ is bounded, then $f\in R[a,b]$ iff  $\forall \eta,\tau>0,\exists \delta>0$ s.t. if $||\pi||<\delta, \sum_{\omega_j\geq\eta}\Delta x_j<\tau$
+assume $f:[a,b]\to R$ is bounded, then $f\in R[a,b]$ iff  $\forall \eta,\tau>0,\exists \delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta, \sum_{\omega_j\geq\eta}\Delta x_j<\tau$
 
-Proof. $\Rightarrow \forall \eta,\tau>0$, choose $\epsilon=\eta\tau>0,\exists \delta>0$ s.t. if $||\pi||<\delta,\sum_{j=0}^{n-1}\omega_j\Delta x_j<\epsilon$
+Proof. $\Rightarrow \forall \eta,\tau>0$, choose $\epsilon=\eta\tau>0,\exists \delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta,\sum_{j=0}^{n-1}\omega_j\Delta x_j<\epsilon$
 
 then $\sum_{\omega_j\geq\eta}\Delta x_j\leq \frac{1}{\eta}\sum_{\omega_j\geq\eta}\omega_j\Delta x_j\leq \frac{1}{\eta}\sum_{j=0}^{n-1}\omega_j\Delta x_j<\tau$
 
 $\Rightarrow$ write $M=\sup f,m=\inf f$
 
-$\forall\epsilon>0$, choose $\eta=\tau=\frac{\epsilon}{M-m+b-a}>0,\exists \delta>0$ s.t. if $||\pi||<\delta, \sum_{\omega_j\geq\eta}\Delta x_j<\tau$
+$\forall\epsilon>0$, choose $\eta=\tau=\frac{\epsilon}{M-m+b-a}>0,\exists \delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta, \sum_{\omega_j\geq\eta}\Delta x_j<\tau$
 
 $\sum_{j=0}^{n-1}\omega_j\Delta x_j=\sum_{\omega_j\geq\eta}\omega_j\Delta x_j+\sum_{\omega_j<\eta}\omega_j\Delta x_j$
 
@@ -211,7 +211,7 @@ $S\in R$ is said to be a measure zero set if $\forall\epsilon>0$, there exist at
 
 (i) $S\subset \cup_j I_j$
 
-(ii) $\sum_j |I_j|<\epsilon$
+(ii) $\sum_j \vert I_j\vert <\epsilon$
 
 Examples.
 
@@ -225,27 +225,27 @@ Examples.
 
 Let $f:[a,b]\to R$ be bounded, then $f\in R[a,b]$ iff $D_f$ is a MZS
 
-$(C_f:=\lbrace x\in [a,b]|f$ is continuous at $x\rbrace,D_f:=[a,b]\setminus C_f)$
+$(C_f:=\lbrace x\in [a,b]\vert f$ is continuous at $x\rbrace,D_f:=[a,b]\setminus C_f)$
 
-Proof. $\Rightarrow$ define $D_\eta:=\lbrace x\in[a,b]|\omega_f(x)\geq\eta\rbrace$
+Proof. $\Rightarrow$ define $D_\eta:=\lbrace x\in[a,b]\vert \omega_f(x)\geq\eta\rbrace$
 
 note that $D_f=\cup_{n=1}^\infty D_\frac{1}{n}$, it suffices to show $D\eta$ is a MZS, $\forall\eta>0$
 
-$\forall\tau>0,\exists \delta>0$ s.t. if $||\pi||<\delta, \sum_{\omega_j\geq\eta}\Delta x_j<\tau$
+$\forall\tau>0,\exists \delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta, \sum_{\omega_j\geq\eta}\Delta x_j<\tau$
 
 note that if $x\in [x_j,x_{j+1}],\omega_f(x)\leq \omega_j$
 
 assume $\pi$ has n partition points, $D_\eta\subset \cup_{\omega_j\geq\eta}[x_j,x_{j+1}]\cup \cup_{j=0}^n[x_j-\frac{\tau}{2n+2},x_j+\frac{\tau}{2n+2}]$
 
-thus, $|D_\eta|\leq\sum_{\omega_j\geq\eta}\Delta x_j+\sum_{j=0}^{n}\frac{\tau}{n+1}=2\tau$
+thus, $\vert D_\eta\vert \leq\sum_{\omega_j\geq\eta}\Delta x_j+\sum_{j=0}^{n}\frac{\tau}{n+1}=2\tau$
 
 i.e. $D_\eta$ is a MZS
 
 $\Leftarrow \forall\epsilon>0,\exists \lbrace(\alpha_j,\beta_j)\rbrace$ s.t. $D_f\subset\cup_j(\alpha_j,\beta_j),\sum_j(\beta_j-\alpha_j)<\epsilon$
 
-$\forall x\in [a,b]\setminus \lbrace(\alpha_j,\beta_j)\rbrace$, as $f$ is continuous at x, $\exists \delta_x$ s.t. $\forall x'\in (x-\delta_x,x+\delta_x),|f(x')-f(x)|<\epsilon$
+$\forall x\in [a,b]\setminus \lbrace(\alpha_j,\beta_j)\rbrace$, as $f$ is continuous at x, $\exists \delta_x$ s.t. $\forall x'\in (x-\delta_x,x+\delta_x),\vert f(x')-f(x)\vert <\epsilon$
 
-$\lbrace(\alpha_j,\beta_j)\rbrace \cup \lbrace (x-\delta_x,x+\delta_x)|x\in [a,b]\setminus \lbrace(\alpha_j,\beta_j)\rbrace\rbrace$ is an open cover of $[a,b]$
+$\lbrace(\alpha_j,\beta_j)\rbrace \cup \lbrace (x-\delta_x,x+\delta_x)\vert x\in [a,b]\setminus \lbrace(\alpha_j,\beta_j)\rbrace\rbrace$ is an open cover of $[a,b]$
 
 by Heine-Borel, exists finite open intervals $\lbrace I_j\rbrace_{j=1}^N$ be a cover of $[a,b]$
 
@@ -253,7 +253,7 @@ the endpoints of $\lbrace I_j\rbrace_{j=1}^N$ make up an partition of $[a,b]$
 
 $\pi_0:a=y_0<y_1< \dots <y_m=b$, choose $\delta=\min_j y_{j+1}-y_j$
 
-$\forall \pi:a=x_0<x_1< \dots <x_n=b,||\pi||<\delta$, each of the intervals $[x_i,x_{i+1}]$ satisfies either
+$\forall \pi:a=x_0<x_1< \dots <x_n=b,\vert \vert \pi\vert \vert <\delta$, each of the intervals $[x_i,x_{i+1}]$ satisfies either
 
 (i) $[x_i,x_{i+1}]\subset (\alpha_j,\beta_j)$ for some j, or
 
@@ -261,7 +261,7 @@ $\forall \pi:a=x_0<x_1< \dots <x_n=b,||\pi||<\delta$, each of the intervals $[x_
 
 $\sum_{i=0}^{n-1}\omega_j\Delta x_j=\sum_{case (i)}\omega_j\Delta x_j+\sum_{case (ii)}\omega_j\Delta x_j$
 
-$<2||f||_\infty\sum_{case (i)}\Delta x_j+2\epsilon\sum_{case (ii)}\Delta x_j<2||f||_\infty\epsilon+2(b-a)\epsilon$
+$<2\vert \vert f\vert \vert _\infty\sum_{case (i)}\Delta x_j+2\epsilon\sum_{case (ii)}\Delta x_j<2\vert \vert f\vert \vert _\infty\epsilon+2(b-a)\epsilon$
 
 i.e. $f\in R[a,b]$
 
@@ -287,25 +287,25 @@ Example. Riemann function is Riemann integrable and the integral is 0
 
 (2) $f\in R[a,c],f\in R[c,b]\Rightarrow f\in R[a,b]$
 
-Proof. (1) in $[a,b], \forall \epsilon>0,\exists\delta>0$ s.t. if $||\pi||<\delta,\sum_{j=0}^{n-1}\omega_j\Delta x_j<\epsilon$
+Proof. (1) in $[a,b], \forall \epsilon>0,\exists\delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta,\sum_{j=0}^{n-1}\omega_j\Delta x_j<\epsilon$
 
-$\forall \pi':\alpha=y_0< \dots <y_m=\beta,||\pi'||<\delta$, it is easy to add partition points in $[a,b]-[\alpha,\beta]$ to make up a new partition $\pi$ and keep $||\pi||<\delta$
+$\forall \pi':\alpha=y_0< \dots <y_m=\beta,\vert \vert \pi'\vert \vert <\delta$, it is easy to add partition points in $[a,b]-[\alpha,\beta]$ to make up a new partition $\pi$ and keep $\vert \vert \pi\vert \vert <\delta$
 
 $\sum_{\pi'}\omega_j\Delta x_j\leq\sum_\pi\omega_j\Delta x_j<\epsilon$, i.e. $f\in R[a,b]$
 
 (2) $\forall \pi:a=x_0<x_1< \dots <x_n=b$, define $\pi_1:(\pi\cap[a,c])\cup\lbrace c\rbrace,\pi_2:(\pi\cap[c,b])\cup\lbrace c\rbrace$, where $\pi_1$ is a partition of $[a,c]$ and $\pi_2$ is a partition of $[c,b]$
 
-$\forall\epsilon>0,\exists \delta_i,>0$ s.t. if $||\pi_i||<\delta,\sum_{\pi_i}\omega_j\Delta x_j<\epsilon,i=1,2$
+$\forall\epsilon>0,\exists \delta_i,>0$ s.t. if $\vert \vert \pi_i\vert \vert <\delta,\sum_{\pi_i}\omega_j\Delta x_j<\epsilon,i=1,2$
 
-choose $\delta=\min\lbrace\delta_1,\delta_2,\epsilon\rbrace,\forall ||\pi||<\delta$, we have $||\pi_1||<\delta_1,||\pi_2||<\delta_2$
+choose $\delta=\min\lbrace\delta_1,\delta_2,\epsilon\rbrace,\forall \vert \vert \pi\vert \vert <\delta$, we have $\vert \vert \pi_1\vert \vert <\delta_1,\vert \vert \pi_2\vert \vert <\delta_2$
 
-$\sum_\pi\omega_j\Delta x_j\leq\sum_\pi\omega_j\Delta x_j+\sum_\pi\omega_j\Delta x_j+2||f||_\infty||\pi||< 2\epsilon+2||f||_\infty\epsilon$
+$\sum_\pi\omega_j\Delta x_j\leq\sum_\pi\omega_j\Delta x_j+\sum_\pi\omega_j\Delta x_j+2\vert \vert f\vert \vert _\infty\vert \vert \pi\vert \vert < 2\epsilon+2\vert \vert f\vert \vert _\infty\epsilon$
 
 i.e. $f\in R[a,b]$
 
 ### Def. measure of a set
 
-let $\Omega\subset R$ be bounded, say, $\Omega\subset [a,b]$, then $|\Omega|:=\int_a^b\chi_\Omega(x)dx$, provided $\chi_\Omega\in R[a,b]$, where $\chi_\Omega(x):=\begin{cases}1,x\in\Omega\\  0,x\notin \Omega\end{cases}$
+let $\Omega\subset R$ be bounded, say, $\Omega\subset [a,b]$, then $\vert \Omega\vert :=\int_a^b\chi_\Omega(x)dx$, provided $\chi_\Omega\in R[a,b]$, where $\chi_\Omega(x):=\begin{cases}1,x\in\Omega\\  0,x\notin \Omega\end{cases}$
 
 ### Thm.
 
@@ -313,19 +313,19 @@ assume $f,g\in R[a,b]$, then
 
 (1) $\int_a^b(f+g)=\int_a^bf+\int_a^bg$
 
-(2) if $f\leq g,\int_a^bf\leq\int_a^b g$, in particular, $|\int_a^bf|\leq\int_a^b|f|$
+(2) if $f\leq g,\int_a^bf\leq\int_a^b g$, in particular, $\vert \int_a^bf\vert \leq\int_a^b\vert f\vert $
 
 Proof.(1) $D_{f+g}\subset D_f\cup D_g,f+g\in R[a,b]$
 
-$\int_a^b(f+g)=\lim_{||\pi||\to 0}\sum(f+g)(\xi_j)\Delta x_j$
+$\int_a^b(f+g)=\lim_{\vert \vert \pi\vert \vert \to 0}\sum(f+g)(\xi_j)\Delta x_j$
 
-$=\lim_{||\pi||\to 0}\sum f(\xi_j)\Delta x_j+\lim_{||\pi||\to 0}\sum g(\xi_j)\Delta x_j=\int_a^bf+\int_a^bg$
+$=\lim_{\vert \vert \pi\vert \vert \to 0}\sum f(\xi_j)\Delta x_j+\lim_{\vert \vert \pi\vert \vert \to 0}\sum g(\xi_j)\Delta x_j=\int_a^bf+\int_a^bg$
 
-(2) $\int_a^bf=\lim_{||\pi||\to 0}\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j\leq \lim_{||\pi||\to 0}\sum_{j=0}^{n-1}g(\xi_j)\Delta x_j=\int_a^bg$
+(2) $\int_a^bf=\lim_{\vert \vert \pi\vert \vert \to 0}\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j\leq \lim_{\vert \vert \pi\vert \vert \to 0}\sum_{j=0}^{n-1}g(\xi_j)\Delta x_j=\int_a^bg$
 
-note that $-|f|\leq f\leq |f|,\int_a^b (-|f|)\leq\int_a^b f\leq\int_a^b|f|$
+note that $-\vert f\vert \leq f\leq \vert f\vert ,\int_a^b (-\vert f\vert )\leq\int_a^b f\leq\int_a^b\vert f\vert $
 
-i.e. $|\int_a^bf|\leq\int_a^b|f|$
+i.e. $\vert \int_a^bf\vert \leq\int_a^b\vert f\vert $
 
 ### Thm. the first mean value thm
 
@@ -345,29 +345,29 @@ Let $f\in R[a,b]$, define $F(x):=\int_a^x f$
 
 (2) if $f$ is continuous at $\xi\in[a,b],F'(\xi)=f(\xi)$
 
-Proof. (1) $\forall x<y\in [a,b],|F(y)-F(x)|=|\int_a^y f-\int_a^x f|=|\int_x^y f|\leq ||f||_\infty|y-x|$
+Proof. (1) $\forall x<y\in [a,b],\vert F(y)-F(x)\vert =\vert \int_a^y f-\int_a^x f\vert =\vert \int_x^y f\vert \leq \vert \vert f\vert \vert _\infty\vert y-x\vert $
 
-(2) $\forall \epsilon>0,\exists \delta>0$ s.t. if $|x-\xi|<\delta,|f(x)-f(\xi)|<\epsilon$
+(2) $\forall \epsilon>0,\exists \delta>0$ s.t. if $\vert x-\xi\vert <\delta,\vert f(x)-f(\xi)\vert <\epsilon$
 
-when $|x-\xi|<\delta,\frac{F(x)-F(\xi)}{x-\xi}-f(\xi)=\frac{1}{x-\xi}\int_\xi^x(f(t)-f(\xi))dt<\frac{1}{x-\xi}\int_\xi^x\epsilon dt=\epsilon$
+when $\vert x-\xi\vert <\delta,\frac{F(x)-F(\xi)}{x-\xi}-f(\xi)=\frac{1}{x-\xi}\int_\xi^x(f(t)-f(\xi))dt<\frac{1}{x-\xi}\int_\xi^x\epsilon dt=\epsilon$
 
 i.e. $F'(\xi)=\lim_{x\to\xi}\frac{F(x)-F(\xi)}{x-\xi}=f(\xi)$
 
 ### Thm. Newton-Leibniz Formula
 
-Let $F'=f\in R[a,b]$, then $\int_a^bf=F(b)-F(a)=F|_a^b$
+Let $F'=f\in R[a,b]$, then $\int_a^bf=F(b)-F(a)=F\vert _a^b$
 
-Proof. $F|_a^b=\sum_{j=0}^{n-1}(F(x_{j+1})-F(x_j))=\sum_{j=0}^{n-1}F'(\xi_j)\Delta x_j,\xi_j\in I_j$
+Proof. $F\vert _a^b=\sum_{j=0}^{n-1}(F(x_{j+1})-F(x_j))=\sum_{j=0}^{n-1}F'(\xi_j)\Delta x_j,\xi_j\in I_j$
 
-$=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j\to\int_a^b f$ as $||\pi||\to 0$
+$=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j\to\int_a^b f$ as $\vert \vert \pi\vert \vert \to 0$
 
-i.e. $\int_a^bf=F(b)-F(a)=F|_a^b$
+i.e. $\int_a^bf=F(b)-F(a)=F\vert _a^b$
 
 Rmk. if $F\in C[a,b]$ is differentiable everywhere except some finite points, the formula is still correct
 
 assume the indifferentiable points are $x_1, \dots ,x_n$
 
-$\int_a^bf=\int_a^{x_1}f+ \dots +\int_{x_n}^bf=F|_a^{x_1}+ \dots +F|_{x_n}^b=F|_a^b$
+$\int_a^bf=\int_a^{x_1}f+ \dots +\int_{x_n}^bf=F\vert _a^{x_1}+ \dots +F\vert _{x_n}^b=F\vert _a^b$
 
 #### Cor.
 
@@ -383,7 +383,7 @@ Proof. let $F(x)=\int_a^x f$, then $F'=f$
 
 note that $\frac{d}{dx}(F\circ\phi)(x)=f\circ\phi\cdot\phi'$
 
-$\int_\alpha^\beta f\circ\phi\cdot\phi'=(F\circ\phi)|_\alpha^\beta=F_a^b=\int_a^bf$
+$\int_\alpha^\beta f\circ\phi\cdot\phi'=(F\circ\phi)\vert _\alpha^\beta=F_a^b=\int_a^bf$
 
 ### Thm. change of variable-strong form
 
@@ -395,7 +395,7 @@ Proof. assume $\phi\uparrow$, let $\pi:\alpha=t_0<t_1< \dots <t_n=\beta$
 
 write $x_j=\phi(t_j)$, then $\pi':a=x_0\leq x_1\leq  \dots \leq x_n=b$ is a partition of $[a,b]$
 
-note that $\Delta x_j=\phi(t_{j+1})-\phi(t_j)=\phi'(\xi_j)\Delta t_j,||\pi'||\leq ||\phi'||_\infty||\pi||$
+note that $\Delta x_j=\phi(t_{j+1})-\phi(t_j)=\phi'(\xi_j)\Delta t_j,\vert \vert \pi'\vert \vert \leq \vert \vert \phi'\vert \vert _\infty\vert \vert \pi\vert \vert $
 
 consider $S_n:=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j$ and $T_n:=\sum_{j=0}^{n-1} f(\phi(\eta_j))\phi'(\eta_j)\Delta t_j, \forall\xi_j\in[x_j,x_{j+1}],\eta_j\in [t_j,t_{j+1}]$, clearly, $S_n\to \int_a^bf,T_n\to \int_\alpha^\beta f\circ\phi\cdot\phi'$
 
@@ -403,9 +403,9 @@ $S_n-T_n=\sum_{j=0}^{n-1}f(\xi_j)\Delta x_j-\sum_{j=0}^{n-1} f(\phi(\eta_j))\phi
 
 $=\sum_{j=0}^{n-1}(f(\xi_j)-f(\phi(\eta_j)))\Delta x_j+\sum_{j=0}^{n-1} f(\phi(\eta_j))(\Delta x_j-\phi'(\eta_j)\Delta t_j)$
 
-$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}||f||_\infty(\phi'(\theta_j)-\phi'(\eta_j))\Delta t_j$
+$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}\vert \vert f\vert \vert _\infty(\phi'(\theta_j)-\phi'(\eta_j))\Delta t_j$
 
-$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}||f||_\infty\omega_j(\phi')\Delta t_j\to 0$, as $||\pi||$, together with $||\pi'||,\to 0$
+$\leq \sum_{j=0}^{n-1}\omega_j(f)\Delta x_j+\sum_{j=0}^{n-1}\vert \vert f\vert \vert _\infty\omega_j(\phi')\Delta t_j\to 0$, as $\vert \vert \pi\vert \vert $, together with $\vert \vert \pi'\vert \vert ,\to 0$
 
 $S_n$ and $T_n$ has the same limit, i.e.$\int_{\phi(\alpha)}^{\phi(\beta)}f=\int_\alpha^\beta f\circ\phi\cdot\phi'$
 
@@ -413,19 +413,19 @@ $S_n$ and $T_n$ has the same limit, i.e.$\int_{\phi(\alpha)}^{\phi(\beta)}f=\int
 
 let u,v be differentiable on $[a,b],u',v'\in R[a,b]$, then
 
-$\int_a^b udv=uv|_a^b-\int_a^bvdu$
+$\int_a^b udv=uv\vert _a^b-\int_a^bvdu$
 
-Proof. $uv|_a^b=\int_a^b(uv)'=\int_a^budv+\int_a^bvdu$
+Proof. $uv\vert _a^b=\int_a^b(uv)'=\int_a^budv+\int_a^bvdu$
 
 ### Thm. integral by parts-strong form
 
 let $f,g\in R[a,b]$, define $F(x)=\int_a^xf,G(x)=\int_a^xg$, then
 
-$\int_a^bFg=FG|_a^b-\int_a^bfG$
+$\int_a^bFg=FG\vert _a^b-\int_a^bfG$
 
-Proof. let $f_n,g_n$ be piecewise affine s.t. $\int_a^b|f_n-f|\to 0,\int_a^b |g_n-g|\to 0,$ as $n\to \infty$
+Proof. let $f_n,g_n$ be piecewise affine s.t. $\int_a^b\vert f_n-f\vert \to 0,\int_a^b \vert g_n-g\vert \to 0,$ as $n\to \infty$
 
-(将 $[a,b]$ n等分,用线段连接相邻分点即得$f_n,\int_a^b|f_n-f|=\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}|f_n-f|$
+(将 $[a,b]$ n等分,用线段连接相邻分点即得$f_n,\int_a^b\vert f_n-f\vert =\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}\vert f_n-f\vert $
 
 $\leq \sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}\omega_j=\sum_{j=0}^{n-1}\omega_j\Delta x_j\to 0$, as $n\to \infty$)
 
@@ -435,17 +435,17 @@ note that $F_n,G_n$ are differentiable on each $[x_j,x_{j+1}]$
 
 thus, $\int_a^bF_ng_n=\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}F_ng_n$
 
-$=\sum_{j=0}^{n-1}F_nG_n|_{x_j}^{x_{j+1}}-\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}f_nG_n=F_nG_n|_a^b-\int_a^bf_nG_n(\ast)$
+$=\sum_{j=0}^{n-1}F_nG_n\vert _{x_j}^{x_{j+1}}-\sum_{j=0}^{n-1}\int_{x_j}^{x_{j+1}}f_nG_n=F_nG_n\vert _a^b-\int_a^bf_nG_n(\ast)$
 
-$|\int_a^bF_ng_n-\int_a^bFg|\leq|\int_a^bF_n(g_n-g)|+|\int_a^bg|F_n-F|$
+$\vert \int_a^bF_ng_n-\int_a^bFg\vert \leq\vert \int_a^bF_n(g_n-g)\vert +\vert \int_a^bg\vert F_n-F\vert $
 
-$\leq||F||_\infty\int_a^b|g_n-g|+||g||_\infty\int_a^b|F_n-F|$
+$\leq\vert \vert F\vert \vert _\infty\int_a^b\vert g_n-g\vert +\vert \vert g\vert \vert _\infty\int_a^b\vert F_n-F\vert $
 
-$\leq (b-a)||f||_\infty\int_a^b|g_n-g|+||g||_\infty\int_a^b\int_a^b|f_n-f|\to 0$, as $n\to\infty$
+$\leq (b-a)\vert \vert f\vert \vert _\infty\int_a^b\vert g_n-g\vert +\vert \vert g\vert \vert _\infty\int_a^b\int_a^b\vert f_n-f\vert \to 0$, as $n\to\infty$
 
 similarly, $\int_a^bG_nf_n\to\int_a^bGf$, as $n\to\infty$
 
-let $(\ast)$ attain its limit, $\int_a^bFg=FG|_a^b-\int_a^bfG$
+let $(\ast)$ attain its limit, $\int_a^bFg=FG\vert _a^b-\int_a^bfG$
 
 ### Thm. the second mean value thm
 
@@ -465,27 +465,27 @@ $\int_a^bfg=g(b)\int_\eta^b f$
 
 Proof. it suffices to show (1)(2)
 
-let $f_n,g_n$ be piecewise affine s.t. $\int_a^b|f_n-f|\to 0,\int_a^b |g_n-g|\to 0,$ as $n\to \infty$
+let $f_n,g_n$ be piecewise affine s.t. $\int_a^b\vert f_n-f\vert \to 0,\int_a^b \vert g_n-g\vert \to 0,$ as $n\to \infty$
 
 define $F_n(x)=\int_a^xf_n,G_n(x)=\int_a^xg_n$
 
-(1) $\int_a^bf_ng_n=F_ng_n|_a^b-\int_a^bF_ng_n'$
+(1) $\int_a^bf_ng_n=F_ng_n\vert _a^b-\int_a^bF_ng_n'$
 
-by the first mean value thm, $=F_ng_n|_a^b-F_n(\zeta_n)\int_a^bg_n'$
+by the first mean value thm, $=F_ng_n\vert _a^b-F_n(\zeta_n)\int_a^bg_n'$
 
-$=F_ng_n|_a^b-F_n(\zeta_n)(g(b)-g(a))$
+$=F_ng_n\vert _a^b-F_n(\zeta_n)(g(b)-g(a))$
 
-let $n\to \infty,\int_a^bfg=Fg|_a^b-\lim_{n\to\infty}F_n(\zeta_n)(g(b)-g(a))$
+let $n\to \infty,\int_a^bfg=Fg\vert _a^b-\lim_{n\to\infty}F_n(\zeta_n)(g(b)-g(a))$
 
 by bolzano-weierstrass,$\exists \zeta_{n_j}\to\xi$, WLOG, assume $\zeta_n\to\zeta$
 
-$|F_n(\zeta_n)-F(\zeta)|\leq |F_n(\zeta_n)-F(\zeta_n)|+|F(\zeta_n)-F(\zeta)|\to 0$, as $n\to\infty$
+$\vert F_n(\zeta_n)-F(\zeta)\vert \leq \vert F_n(\zeta_n)-F(\zeta_n)\vert +\vert F(\zeta_n)-F(\zeta)\vert \to 0$, as $n\to\infty$
 
-thus, $\int_a^bfg=Fg|_a^b-F(\zeta)(g(b)-g(a))$
+thus, $\int_a^bfg=Fg\vert _a^b-F(\zeta)(g(b)-g(a))$
 
 $=(F(b)-F(\zeta))g(b)+(F(\zeta)-F(a))g(a)=g(a)\int_a^\zeta f+g(b)\int_\zeta^b f$
 
-(2) as $\int_a^bfg=Fg|_a^b-F(\zeta)(g(b)-g(a))=F(b)g(b)+(g(a)-g(b))F(\zeta)$
+(2) as $\int_a^bfg=Fg\vert _a^b-F(\zeta)(g(b)-g(a))=F(b)g(b)+(g(a)-g(b))F(\zeta)$
 
 $\int_a^b fg\leq \max F g(b)+(g(a)-g(b))\max F=g(a)\max F$
 
@@ -512,7 +512,7 @@ the above is the algebra structure
 
 moreover, it is also equipped with a topological structure: the distance of any two points x,y is defined by
 
-$d(x,y):=\sqrt{\sum_{i=1}^n|x_j-y_j|^2}$
+$d(x,y):=\sqrt{\sum_{i=1}^n\vert x_j-y_j\vert ^2}$
 
 $d(\cdot,\cdot):R^n\times R^n \to R_{\geq 0}$ satisfies:
 
@@ -524,7 +524,7 @@ $d(\cdot,\cdot):R^n\times R^n \to R_{\geq 0}$ satisfies:
 
 the norm of $x=(x_1, \dots ,x_n)$ is defined by
 
-$||x||:=d(x,0)=\sqrt{\sum_{j=1}^n x_j^2}$
+$\vert \vert x\vert \vert :=d(x,0)=\sqrt{\sum_{j=1}^n x_j^2}$
 
 ### Def. metric space
 
@@ -538,51 +538,51 @@ given a non-empty set X, $d(\cdot,\cdot): X\times X\to R_{\geq 0}$ is called a m
 
 $(X,d)$ is called a metric space
 
-Example: $(R,d)$ is a metric space with $d(x,y)=k|x-y|,\forall k\in R\setminus\lbrace 0\rbrace$
+Example: $(R,d)$ is a metric space with $d(x,y)=k\vert x-y\vert ,\forall k\in R\setminus\lbrace 0\rbrace$
 
 ### Def. normed space
 
-given a vector space V over a field F, a norm on V is a function $||\cdot||:V\to R_{\geq 0}$ with the following properties
+given a vector space V over a field F, a norm on V is a function $\vert \vert \cdot\vert \vert :V\to R_{\geq 0}$ with the following properties
 
-(i) positivity $||x||\geq 0$ and $||x||=0$ iff $x=0\in V$
+(i) positivity $\vert \vert x\vert \vert \geq 0$ and $\vert \vert x\vert \vert =0$ iff $x=0\in V$
 
-(ii) triangle inequality $||x+y||\leq ||x||+||y||$
+(ii) triangle inequality $\vert \vert x+y\vert \vert \leq \vert \vert x\vert \vert +\vert \vert y\vert \vert $
 
-(iii) homogeneity齐次性 $||\lambda x||=|\lambda|||x||$
+(iii) homogeneity齐次性 $\vert \vert \lambda x\vert \vert =\vert \lambda\vert \vert \vert x\vert \vert $
 
-$(V,||\cdot||)$ is called a normed space
+$(V,\vert \vert \cdot\vert \vert )$ is called a normed space
 
-Rmk. a normed space is a metric space with $d(x,y):=||x-y||$
+Rmk. a normed space is a metric space with $d(x,y):=\vert \vert x-y\vert \vert $
 
 ### Thm. Holder inequality
 
-let $f,g\in R[a,b],\frac{1}{p}+\frac{1}{q}=1,p,q>0$, then $||fg||_1\leq ||f||_p||g||_q$
+let $f,g\in R[a,b],\frac{1}{p}+\frac{1}{q}=1,p,q>0$, then $\vert \vert fg\vert \vert _1\leq \vert \vert f\vert \vert _p\vert \vert g\vert \vert _q$
 
-where for each $\phi\in R[a,b],||\phi||_p:=(\int_a^b|\phi|^p)^\frac{1}{p}$
+where for each $\phi\in R[a,b],\vert \vert \phi\vert \vert _p:=(\int_a^b\vert \phi\vert ^p)^\frac{1}{p}$
 
-Proof. WLOG, assume $||f||_p||g||_q>0$, since $y=e^x$ is convex
+Proof. WLOG, assume $\vert \vert f\vert \vert _p\vert \vert g\vert \vert _q>0$, since $y=e^x$ is convex
 
 $\forall a,b>0,ab=e^{\frac{1}{p}lna^p+\frac{1}{q}lnb^q}\leq \frac{1}{p}e^{lna^p}+\frac{1}{q}e^{lnb^q}=\frac{1}{p}a^p+\frac{1}{q}b^q$
 
-$\frac{||fg||_1}{||f||_p||g||_q}=\int_a^b\frac{|f|}{||f||_p}\frac{|g|}{||g||_q}\leq\int_a^b(\frac{1}{p}\frac{|f|^p}{||f||_p^p}+\frac{1}{q}\frac{|g|^p}{||g||_q^q})=\frac{1}{p}+\frac{1}{q}=1$
+$\frac{\vert \vert fg\vert \vert _1}{\vert \vert f\vert \vert _p\vert \vert g\vert \vert _q}=\int_a^b\frac{\vert f\vert }{\vert \vert f\vert \vert _p}\frac{\vert g\vert }{\vert \vert g\vert \vert _q}\leq\int_a^b(\frac{1}{p}\frac{\vert f\vert ^p}{\vert \vert f\vert \vert _p^p}+\frac{1}{q}\frac{\vert g\vert ^p}{\vert \vert g\vert \vert _q^q})=\frac{1}{p}+\frac{1}{q}=1$
 
-i.e. $||fg||_1\leq ||f||_p||g||_q$
+i.e. $\vert \vert fg\vert \vert _1\leq \vert \vert f\vert \vert _p\vert \vert g\vert \vert _q$
 
 ### Thm. Minkovski inequality
 
-let $f,g\in R[a,b]$, for $\forall 1\leq p\leq +\infty,||f+g||_p\leq ||f||_p+||g||_p$
+let $f,g\in R[a,b]$, for $\forall 1\leq p\leq +\infty,\vert \vert f+g\vert \vert _p\leq \vert \vert f\vert \vert _p+\vert \vert g\vert \vert _p$
 
 Proof. if $p=+\infty$, obviously $\sup(f+g)\leq \sup f+\sup g$
 
-for $1\leq p<+\infty,||f+g||_p^p=\int_a^b|f+g|^p\leq \int_a^b(|f|+|g|)|f+g|^{p-1}$
+for $1\leq p<+\infty,\vert \vert f+g\vert \vert _p^p=\int_a^b\vert f+g\vert ^p\leq \int_a^b(\vert f\vert +\vert g\vert )\vert f+g\vert ^{p-1}$
 
-by Holder inequality, $\leq (\int_a^b|f|^p)^\frac{1}{p}(\int_a^b|f+g|^{(p-1)q})^\frac{1}{q}+(\int_a^b|g|^p)^\frac{1}{p}(\int_a^b|f+g|^{(p-1)q})^\frac{1}{q}$
+by Holder inequality, $\leq (\int_a^b\vert f\vert ^p)^\frac{1}{p}(\int_a^b\vert f+g\vert ^{(p-1)q})^\frac{1}{q}+(\int_a^b\vert g\vert ^p)^\frac{1}{p}(\int_a^b\vert f+g\vert ^{(p-1)q})^\frac{1}{q}$
 
-$=(||f||_p+||g||_p)||f+g||_p^{\frac{p}{q}}$
+$=(\vert \vert f\vert \vert _p+\vert \vert g\vert \vert _p)\vert \vert f+g\vert \vert _p^{\frac{p}{q}}$
 
-thus, $||f+g||_p=||f+g||_p^{p-\frac{p}{q}}\leq ||f||_p+||g||_p$
+thus, $\vert \vert f+g\vert \vert _p=\vert \vert f+g\vert \vert _p^{p-\frac{p}{q}}\leq \vert \vert f\vert \vert _p+\vert \vert g\vert \vert _p$
 
-Rmk: the discrete form of Minkovski inequality is $||x+y||_p\leq ||x||_p+||y||_p,\forall x,y\in R^n$, where $||x||_p:=(\sum_{j=1}^n|x_j|^p)^\frac{1}{p}$, and the proof is similar
+Rmk: the discrete form of Minkovski inequality is $\vert \vert x+y\vert \vert _p\leq \vert \vert x\vert \vert _p+\vert \vert y\vert \vert _p,\forall x,y\in R^n$, where $\vert \vert x\vert \vert _p:=(\sum_{j=1}^n\vert x_j\vert ^p)^\frac{1}{p}$, and the proof is similar
 
 
 
@@ -600,33 +600,33 @@ Rmk: $\langle x,\lambda y\rangle=\langle \lambda y,x\rangle=\lambda \langle y,x\
 
 then $(V,\langle\cdot,\cdot\rangle)$ is called an inner product space
 
-Rmk. if $a,b\in V\setminus\lbrace 0 \rbrace, \theta:=\arccos\frac{\langle a,b\rangle}{||a||||b||}$ is called the angle between a and b
+Rmk. if $a,b\in V\setminus\lbrace 0 \rbrace, \theta:=\arccos\frac{\langle a,b\rangle}{\vert \vert a\vert \vert \vert \vert b\vert \vert }$ is called the angle between a and b
 
 ### Thm. Cauchy-Schwarz inequality
 
-if $(V,||\cdot||)$ is a normed product space with an inner product, then $|\langle u,v\rangle|\leq||u||||v||$
+if $(V,\vert \vert \cdot\vert \vert )$ is a normed product space with an inner product, then $\vert \langle u,v\rangle\vert \leq\vert \vert u\vert \vert \vert \vert v\vert \vert $
 
-Proof. $0\leq ||u+\lambda v||^2=\langle u+\lambda v,u+\lambda v\rangle=||u||^2+2\lambda\langle u,v\rangle+\lambda^2||v||^2$
+Proof. $0\leq \vert \vert u+\lambda v\vert \vert ^2=\langle u+\lambda v,u+\lambda v\rangle=\vert \vert u\vert \vert ^2+2\lambda\langle u,v\rangle+\lambda^2\vert \vert v\vert \vert ^2$
 
-$\Delta=4\langle u,v\rangle^2-4||u||^2||v||^2\leq 0$, i.e. $|\langle u,v\rangle|\leq||u||||v||$
+$\Delta=4\langle u,v\rangle^2-4\vert \vert u\vert \vert ^2\vert \vert v\vert \vert ^2\leq 0$, i.e. $\vert \langle u,v\rangle\vert \leq\vert \vert u\vert \vert \vert \vert v\vert \vert $
 
 ### Thm.
 
-if $(V,\langle\cdot,\cdot\rangle)$ is an inner product space, then it is a normed space if we define $||x||:=\sqrt{\langle x,x\rangle},\forall x\in V$
+if $(V,\langle\cdot,\cdot\rangle)$ is an inner product space, then it is a normed space if we define $\vert \vert x\vert \vert :=\sqrt{\langle x,x\rangle},\forall x\in V$
 
 Proof. it suffices to show the triangle inequality
 
-$||x+y||^2=\langle x+y,x+y\rangle=||x||^2+2\langle x,y\rangle+||y||^2\leq (||x||+||y||)^2$
+$\vert \vert x+y\vert \vert ^2=\langle x+y,x+y\rangle=\vert \vert x\vert \vert ^2+2\langle x,y\rangle+\vert \vert y\vert \vert ^2\leq (\vert \vert x\vert \vert +\vert \vert y\vert \vert )^2$
 
-i.e. $||x+y||\leq ||x||+||y||$
+i.e. $\vert \vert x+y\vert \vert \leq \vert \vert x\vert \vert +\vert \vert y\vert \vert $
 
 ### Def. ball
 
-let $(X,d)$ be a metric space, for each $r>0,B_r(x):=\lbrace y\in X|d(x,y)<r\rbrace$ is called an open ball with radius r, centered at x
+let $(X,d)$ be a metric space, for each $r>0,B_r(x):=\lbrace y\in X\vert d(x,y)<r\rbrace$ is called an open ball with radius r, centered at x
 
 ### Def. cube
 
-$\forall l>0,x\in R^n, C_l(x):=\lbrace y\in R^n||x_j-y_j|<\frac{l}{2},j=1,2, \dots ,n\rbrace$ is called a cube of side-length $l$, centered at point x
+$\forall l>0,x\in R^n, C_l(x):=\lbrace y\in R^n\vert \vert x_j-y_j\vert <\frac{l}{2},j=1,2, \dots ,n\rbrace$ is called a cube of side-length $l$, centered at point x
 
 ### Def. diameter
 
@@ -703,17 +703,17 @@ Example. $(Q,d)$ is not complete
 
 ### Thm.
 
-$(R^d,||\cdot||)$ is complete
+$(R^d,\vert \vert \cdot\vert \vert )$ is complete
 
-Proof. let $\lbrace x_n\rbrace\in R^d$ be Cauchy, i.e. $\forall\epsilon>0,\exists N=N(\epsilon)$ s.t. if $m>n>N,||x_m-x_n||=\sqrt{\sum_{j=1}^d|x_m^{(j)}-x_n^{(j)}|^2}<\epsilon$
+Proof. let $\lbrace x_n\rbrace\in R^d$ be Cauchy, i.e. $\forall\epsilon>0,\exists N=N(\epsilon)$ s.t. if $m>n>N,\vert \vert x_m-x_n\vert \vert =\sqrt{\sum_{j=1}^d\vert x_m^{(j)}-x_n^{(j)}\vert ^2}<\epsilon$
 
-$\forall 1\leq j\leq d,|x_m^{(j)}-x_n^{(j)}|<\epsilon$, i.e. $\lbrace x_n^{(j)}\rbrace$ is Cauchy, $\exists x^{(j)}\in R, x_n^{(j)}\to x^{(j)}$
+$\forall 1\leq j\leq d,\vert x_m^{(j)}-x_n^{(j)}\vert <\epsilon$, i.e. $\lbrace x_n^{(j)}\rbrace$ is Cauchy, $\exists x^{(j)}\in R, x_n^{(j)}\to x^{(j)}$
 
 let $x=(x^{(1)},x^{(2)}, \dots x^{(d)})\in R^d$
 
-$||x_n-x||=\sqrt{\sum_{j=1}^d|x_n^{(j)}-x^{(j)}|^2}\leq \sum_{j=1}^d|x_n^{(j)}-x^{(j)}|\to 0$, as $n\to\infty$
+$\vert \vert x_n-x\vert \vert =\sqrt{\sum_{j=1}^d\vert x_n^{(j)}-x^{(j)}\vert ^2}\leq \sum_{j=1}^d\vert x_n^{(j)}-x^{(j)}\vert \to 0$, as $n\to\infty$
 
-i.e. $x_n\to x\in R^d$, $(R^d,||\cdot||)$ is complete
+i.e. $x_n\to x\in R^d$, $(R^d,\vert \vert \cdot\vert \vert )$ is complete
 
 ### Thm.
 
@@ -761,7 +761,7 @@ let $(X,d)$ be a complete metric space, $S\subset X$ is called dense if $\overli
 
 Rmk. (1) Q is dense in R
 
-(2) $\lbrace \sin n|n\in N\rbrace$ is dense in $[-1,1]$
+(2) $\lbrace \sin n\vert n\in N\rbrace$ is dense in $[-1,1]$
 
 ### Thm. baire category thm
 
@@ -823,13 +823,13 @@ Example: $\Omega\subset R$, bounded and closed $\Leftrightarrow\Omega$ is compac
 
 $\Omega$ is compact $\Rightarrow \Omega$ is bounded and closed
 
-Proof. $\forall y\in\Omega$, define $\Omega_n:=\lbrace x|d(x,y)<n\rbrace,n\in N$
+Proof. $\forall y\in\Omega$, define $\Omega_n:=\lbrace x\vert d(x,y)<n\rbrace,n\in N$
 
 note that $\Omega\subset\cup_{j=1}^{\infty}\Omega_j=X$, and $\Omega_1\subset\Omega_2\subset \dots$
 
 thus, $\exists t,\Omega\subset\Omega_t$, i.e. $\Omega$ is bounded
 
-$\forall y\in\Omega^c$, define $\Omega_n:=\lbrace x|d(x,y)>\frac{1}{n}\rbrace,n\in N$
+$\forall y\in\Omega^c$, define $\Omega_n:=\lbrace x\vert d(x,y)>\frac{1}{n}\rbrace,n\in N$
 
 note that $\Omega\subset X\setminus\lbrace y\rbrace=\cup_{j=1}^\infty\Omega_n$, and $\Omega_1\subset\Omega_2\subset \dots$
 
@@ -895,7 +895,7 @@ by the assumption, $x_n\in X,x_n\to\zeta$ implies $f(x_n)\to f(\zeta)$, contradi
 
 ### Thm.
 
-$f\in C(X,Y)\Leftrightarrow \forall \Omega\subset Y$ open, $f^{-1}(\Omega)$ is open, where $f^{-1}(\Omega):=\lbrace x\in X|f(x)\in\Omega\rbrace$
+$f\in C(X,Y)\Leftrightarrow \forall \Omega\subset Y$ open, $f^{-1}(\Omega)$ is open, where $f^{-1}(\Omega):=\lbrace x\in X\vert f(x)\in\Omega\rbrace$
 
 Proof. $\Rightarrow\forall \zeta\in f^{-1}(\Omega),\exists\epsilon>0,B_\epsilon(f(\zeta))\subset \Omega$
 
@@ -965,7 +965,7 @@ Proof. note that path-connected set in R must be an interval
 
 ### Def.
 
-let $f\in(R^2,R)$, given $L\in R$, if $\forall\epsilon>0,\exists\delta=\delta(\epsilon)>0$ s.t. if $0<||(x,y)-(\xi,\eta)||<\delta,|f(x,y)-L|<\epsilon$, then $\lim_{(x,y)\to(\xi,\eta)}f(x,y)=L$
+let $f\in(R^2,R)$, given $L\in R$, if $\forall\epsilon>0,\exists\delta=\delta(\epsilon)>0$ s.t. if $0<\vert \vert (x,y)-(\xi,\eta)\vert \vert <\delta,\vert f(x,y)-L\vert <\epsilon$, then $\lim_{(x,y)\to(\xi,\eta)}f(x,y)=L$
 
 ### Def. homeomorphism 同胚
 
@@ -987,13 +987,13 @@ let $f:R^2\to R$ be continuous on x,y respectively, and $f$ is monotone on y, th
 
 Proof. WLOG, assume $y\uparrow$, it suffices to show $f$ is continuous at $(0,0)$
 
-$\forall\epsilon>0,\exists\delta>0$ s.t. if $|y|<\delta,|f(0,y)-f(0,0)|<\epsilon$
+$\forall\epsilon>0,\exists\delta>0$ s.t. if $\vert y\vert <\delta,\vert f(0,y)-f(0,0)\vert <\epsilon$
 
-$\exists\delta'>0$ s.t. if $|x|<\delta',|f(x,\delta)-f(0,\delta)|<\epsilon,|f(x,-\delta)-f(0,-\delta)|<\epsilon$
+$\exists\delta'>0$ s.t. if $\vert x\vert <\delta',\vert f(x,\delta)-f(0,\delta)\vert <\epsilon,\vert f(x,-\delta)-f(0,-\delta)\vert <\epsilon$
 
 $\forall (x,y)\in [-\delta',\delta']\times[-\delta,\delta],f(x,-\delta)\leq f(x,y)\leq f(x,\delta)$
 
-as $|f(x,-\delta)-f(0,0)|<2\epsilon,|f(x,\delta)-f(0,0)|<2\epsilon,|f(x,y)-f(0,0)|<2\epsilon$
+as $\vert f(x,-\delta)-f(0,0)\vert <2\epsilon,\vert f(x,\delta)-f(0,0)\vert <2\epsilon,\vert f(x,y)-f(0,0)\vert <2\epsilon$
 
 i.e. $f$ is continuous at $(0,0)$
 
@@ -1019,7 +1019,7 @@ Rmk. existence of all first order directional derivatives $\nRightarrow$ continu
 
 ### Def. differentiable
 
-let $\emptyset\neq\Omega\subset R^d$ be open and $f:\Omega\to R$, we say that $f$ is differentiable at $p\in\Omega$, if their exists a linear mapping $L=L(p):R^d\to R$ s.t. $f(x)=f(p)+Lh+o(||h||)$, as $h:=x-p\to 0$
+let $\emptyset\neq\Omega\subset R^d$ be open and $f:\Omega\to R$, we say that $f$ is differentiable at $p\in\Omega$, if their exists a linear mapping $L=L(p):R^d\to R$ s.t. $f(x)=f(p)+Lh+o(\vert \vert h\vert \vert )$, as $h:=x-p\to 0$
 
 moreover, $df(p)h:=Lh,\forall h\in R^d$ is called the differentiation of $f$ at p
 
@@ -1033,7 +1033,7 @@ $\nabla f(p):=\xi$ is called the gradient of $f$ at p
 
 Rmk. write $\xi=\xi_1e_1+ \dots +\xi_de_d,h=h_1e_1+ \dots +h_de_d$, then $df(p)h=\xi_1h_1+ \dots +\xi_dh_d$
 
-$\forall j$ fixed, choose $h=h_je_j, f(x)-f(p)=Lh+o(||h||)=\xi_jh_j+o(h_j)$
+$\forall j$ fixed, choose $h=h_je_j, f(x)-f(p)=Lh+o(\vert \vert h\vert \vert )=\xi_jh_j+o(h_j)$
 
 i.e. $\xi_j=\frac{f(p+h_je_j)-f(p)}{h_j}+o(1)$, let $h\to 0,\xi_j=\partial_jf(p)$
 
@@ -1041,9 +1041,9 @@ thus, $\nabla f(p)=\xi=(\partial_1f(p), \dots ,\partial_df(p))^T\in R^d$
 
 ### Thm.
 
-if $f:\Omega\to R$ is differentiable at $p\in\Omega$, then for each $\nu\in R^d,||\nu||=1,\frac{\partial f}{\partial \nu}(p)=\langle\nabla f(p),\nu\rangle\leq ||\nabla f(p)||$, and "=" holds if $\nu=\pm\frac{\nabla f(p)}{||\nabla f(p)||}$
+if $f:\Omega\to R$ is differentiable at $p\in\Omega$, then for each $\nu\in R^d,\vert \vert \nu\vert \vert =1,\frac{\partial f}{\partial \nu}(p)=\langle\nabla f(p),\nu\rangle\leq \vert \vert \nabla f(p)\vert \vert $, and "=" holds if $\nu=\pm\frac{\nabla f(p)}{\vert \vert \nabla f(p)\vert \vert }$
 
-Proof. $f(p+t\nu)-f(p)=\langle\nabla f(p),t\nu\rangle+o(||t\nu||)$
+Proof. $f(p+t\nu)-f(p)=\langle\nabla f(p),t\nu\rangle+o(\vert \vert t\nu\vert \vert )$
 
 $\langle\nabla f(p),\nu\rangle=\frac{f(p+t\nu)-f(p)}{t}+o(1)$, let $t\to 0,\langle\nabla f(p),\nu\rangle=\frac{\partial f}{\partial \nu}(p)$
 
@@ -1071,13 +1071,13 @@ $f(x,y)-f(a,b)=f(x,y)-f(a,y)+f(a,y)-f(a,b)$
 
 $=\partial_xf(\xi,y)h+\partial_yf(a,\eta)k=(\partial_xf(a,b)+o(1))h+(\partial_yf(a,b)+o(1))k$
 
-$=\langle\nabla f(p),(h,k)\rangle+o(||(h,k)||)$
+$=\langle\nabla f(p),(h,k)\rangle+o(\vert \vert (h,k)\vert \vert )$
 
 i.e. $f$ is differentiable at $p$
 
 ### Def. differentiation of mapping
 
-let $F=(f_1, \dots ,f_l):\Omega\to R^l,\emptyset\neq\Omega\subset R^d$ open, we say $F$ is differentiable at $p\in\Omega$ if $\exists$ linear mapping $L:R^d\to R^l$ s.t. $F(x)-F(p)=Lh+o(||h||)$, as $h:=x-p\to 0$
+let $F=(f_1, \dots ,f_l):\Omega\to R^l,\emptyset\neq\Omega\subset R^d$ open, we say $F$ is differentiable at $p\in\Omega$ if $\exists$ linear mapping $L:R^d\to R^l$ s.t. $F(x)-F(p)=Lh+o(\vert \vert h\vert \vert )$, as $h:=x-p\to 0$
 
 moreover, $dF(p)u:=Lu,\forall u\in R^d$ is called the differentiation of $F$ at $p$
 
@@ -1091,13 +1091,13 @@ the matrix $(\frac{\partial f_i}{\partial x_d})_{l\times d}$ is also written as 
 
 if $F:R^d\to R^n$ and $G:R^n\to R^l$ be differentiable, then $G\circ F:R^d\to R^l$ is differentiable and $D(G\circ F(p))=DG(F(p))\cdot DF(p)$
 
-Proof. write $h=x-p,F(x)-F(p)=DF(p)h+o(||h||)$
+Proof. write $h=x-p,F(x)-F(p)=DF(p)h+o(\vert \vert h\vert \vert )$
 
-$G(F(x))-G(F(p))=DG(F(p))(F(x)-F(p))+o(||F(x)-F(p)||)$
+$G(F(x))-G(F(p))=DG(F(p))(F(x)-F(p))+o(\vert \vert F(x)-F(p)\vert \vert )$
 
-$=DG(F(p))(DF(p)h+o(||h||))+o(||DF(p)h+o(||h||)||)$
+$=DG(F(p))(DF(p)h+o(\vert \vert h\vert \vert ))+o(\vert \vert DF(p)h+o(\vert \vert h\vert \vert )\vert \vert )$
 
-$=DG(F(p))DF(p)h+o(||h||)$
+$=DG(F(p))DF(p)h+o(\vert \vert h\vert \vert )$
 
 i.e. $G\circ F$ is differentiable and $D(G\circ F(p))=DG(F(p))\cdot DF(p)$
 
@@ -1141,13 +1141,13 @@ note that $u(x)-u(0)=v(x)-v(0),\partial_{xy}f(0,0)=\partial_{yx}f(0,0)$
 
 let $\nu=(\nu_1, \dots ,\nu_d)\in Z_{\geq 0}^d,x=(x_1, \dots ,x_d)\in R^d$
 
-define $|\nu|:=\nu_1+ \dots +\nu_d,\nu!:=\nu_1! \dots \nu_d!,x^\nu:=x_1^{\nu_1} \dots x_d^{\nu_d}$
+define $\vert \nu\vert :=\nu_1+ \dots +\nu_d,\nu!:=\nu_1! \dots \nu_d!,x^\nu:=x_1^{\nu_1} \dots x_d^{\nu_d}$
 
-$\begin{pmatrix}|\nu|\\ \nu\\ \end{pmatrix}=\begin{pmatrix}|\nu|\\  \nu_1, \dots ,\nu_d\\  \end{pmatrix}:=\frac{|\nu|!}{\nu_1! \dots \nu_d!}=\frac{|\nu|!}{\nu!}$
+$\begin{pmatrix}\vert \nu\vert \\ \nu\\ \end{pmatrix}=\begin{pmatrix}\vert \nu\vert \\  \nu_1, \dots ,\nu_d\\  \end{pmatrix}:=\frac{\vert \nu\vert !}{\nu_1! \dots \nu_d!}=\frac{\vert \nu\vert !}{\nu!}$
 
 ### Thm. multinomial thm
 
-$(x_1+ \dots +x_d)^m=\sum_{|\nu|=m}\begin{pmatrix}m\\ \nu\\ \end{pmatrix}x^\nu$
+$(x_1+ \dots +x_d)^m=\sum_{\vert \nu\vert =m}\begin{pmatrix}m\\ \nu\\ \end{pmatrix}x^\nu$
 
 Proof. obviously, it holds for $d=1$, suppose it holds for $d$, then
 
@@ -1183,43 +1183,43 @@ $f(x)=f(p)+\sum_{j=0}^{n-1}\frac{1}{j!}(\zeta\cdot\nabla)^jf(p)+\frac{1}{n!}(\ze
 
 ### Thm.
 
-let $A\in M_d(R)$ be invertible, then $\exists s_1,s_2>0$ s.t. $s_1||x||\leq ||Ax||\leq s_2||x||,\forall x\in R^d$
+let $A\in M_d(R)$ be invertible, then $\exists s_1,s_2>0$ s.t. $s_1\vert \vert x\vert \vert \leq \vert \vert Ax\vert \vert \leq s_2\vert \vert x\vert \vert ,\forall x\in R^d$
 
 Proof. the situation $x=0$ is obvious
 
-as $S^{d-1}:=\lbrace x\in R^d|||x||=1\rbrace$ is compact and $||Ax||$ is continuous on $S^{d-1}$, it attains maximun and minimun
+as $S^{d-1}:=\lbrace x\in R^d\vert \vert \vert x\vert \vert =1\rbrace$ is compact and $\vert \vert Ax\vert \vert $ is continuous on $S^{d-1}$, it attains maximun and minimun
 
-let $s_1=\min_{S^{n-1}}||Ax||,s_2=\max_{S^{n-1}}||Ax||$, as $A$ is invertible, $s_1,s_2>0$
+let $s_1=\min_{S^{n-1}}\vert \vert Ax\vert \vert ,s_2=\max_{S^{n-1}}\vert \vert Ax\vert \vert $, as $A$ is invertible, $s_1,s_2>0$
 
-$\forall x\neq 0\in R^d,s_1\leq ||A\frac{x}{||x||}||\leq s_2$, i.e. $s_1||x||\leq ||Ax||\leq s_2||x||$
+$\forall x\neq 0\in R^d,s_1\leq \vert \vert A\frac{x}{\vert \vert x\vert \vert }\vert \vert \leq s_2$, i.e. $s_1\vert \vert x\vert \vert \leq \vert \vert Ax\vert \vert \leq s_2\vert \vert x\vert \vert $
 
 ### Thm.
 
-let $F\in C^1(\Omega,R^d),p\in\Omega\subset R^d$, if $DF(p)$ is invertible, then $\exists U$: neighborhood of $p$ and $\sigma>0$ s.t. $||F(x)-F(y)||\geq \sigma||x-y||,\forall x,y\in U$, in particular, $F|_U$ is injective
+let $F\in C^1(\Omega,R^d),p\in\Omega\subset R^d$, if $DF(p)$ is invertible, then $\exists U$: neighborhood of $p$ and $\sigma>0$ s.t. $\vert \vert F(x)-F(y)\vert \vert \geq \sigma\vert \vert x-y\vert \vert ,\forall x,y\in U$, in particular, $F\vert _U$ is injective
 
-Proof. $det DF(p)\neq 0\Rightarrow \exists \sigma>0,||DF(p)\eta||\geq 3\sigma||\eta||,\forall \eta\in R^d$
+Proof. $det DF(p)\neq 0\Rightarrow \exists \sigma>0,\vert \vert DF(p)\eta\vert \vert \geq 3\sigma\vert \vert \eta\vert \vert ,\forall \eta\in R^d$
 
-as $DF(x)$ is continuous, $\exists\delta'>0, ||DF(x)\eta||\geq 2\sigma||\eta||,\forall x\in B_{\delta'}(p),\forall \eta\in R^d$
+as $DF(x)$ is continuous, $\exists\delta'>0, \vert \vert DF(x)\eta\vert \vert \geq 2\sigma\vert \vert \eta\vert \vert ,\forall x\in B_{\delta'}(p),\forall \eta\in R^d$
 
-since $F$ is differentiable, $F(y)-F(x)=DF(x)(y-x)+o(||y-x||),\exists 0<\delta<\delta'$ s.t. $\forall x,y\in B_{\delta}(p),o(||y-x||)<\sigma||y-x||$
+since $F$ is differentiable, $F(y)-F(x)=DF(x)(y-x)+o(\vert \vert y-x\vert \vert ),\exists 0<\delta<\delta'$ s.t. $\forall x,y\in B_{\delta}(p),o(\vert \vert y-x\vert \vert )<\sigma\vert \vert y-x\vert \vert $
 
-then, $||F(y)-F(x)||=||DF(x)(y-x)+o(||y-x||)||$
+then, $\vert \vert F(y)-F(x)\vert \vert =\vert \vert DF(x)(y-x)+o(\vert \vert y-x\vert \vert )\vert \vert $
 
-$\geq 2\sigma||y-x||-\sigma||y-x||=\sigma||y-x||,\forall x,y\in U=B_\delta(p)$
+$\geq 2\sigma\vert \vert y-x\vert \vert -\sigma\vert \vert y-x\vert \vert =\sigma\vert \vert y-x\vert \vert ,\forall x,y\in U=B_\delta(p)$
 
 ### Thm. open mapping thm
 
 let $S\in R^d$ be open, $F\in C^1(S,R^d)$ and DF is invertible, then $F$ is an open mapping, i.e. $\forall \Omega\subset S$ open, $F(\Omega)$ is open
 
-Proof. $\forall x\in\Omega,detDF(x)\neq 0,\exists\lambda>0,||DF(x)v||\geq \lambda||v||,\forall v\in R^d$
+Proof. $\forall x\in\Omega,detDF(x)\neq 0,\exists\lambda>0,\vert \vert DF(x)v\vert \vert \geq \lambda\vert \vert v\vert \vert ,\forall v\in R^d$
 
-$\exists \delta>0$ s.t. if $u\in \overline{B_{\delta(x)}},F(u)-F(x)=DF(x)(u-x)+o(||u-x||)\geq \frac{\lambda}{2}||u-x||$
+$\exists \delta>0$ s.t. if $u\in \overline{B_{\delta(x)}},F(u)-F(x)=DF(x)(u-x)+o(\vert \vert u-x\vert \vert )\geq \frac{\lambda}{2}\vert \vert u-x\vert \vert $
 
 in particular, choose $z\in \partial B_{\delta(x)},F(z)-F(x)\geq \frac{\lambda\delta}{2}$
 
-thus, $\forall y_0\in B_{\frac{\lambda\delta}{4}}(F(x)),||y_0-F(x)||<\frac{\lambda\delta}{4}<||y_0-F(z)||$
+thus, $\forall y_0\in B_{\frac{\lambda\delta}{4}}(F(x)),\vert \vert y_0-F(x)\vert \vert <\frac{\lambda\delta}{4}<\vert \vert y_0-F(z)\vert \vert $
 
-let $\phi(t):=||y_0-F(t)||^2,t\in\overline{B_{\delta(x)}}$, then $\phi(x)<\phi(t),\forall t\in \partial B_{\delta(x)},\phi$ attains its minimun in its interior point $t_0$
+let $\phi(t):=\vert \vert y_0-F(t)\vert \vert ^2,t\in\overline{B_{\delta(x)}}$, then $\phi(x)<\phi(t),\forall t\in \partial B_{\delta(x)},\phi$ attains its minimun in its interior point $t_0$
 
 thus, $\nabla\phi(t_0)=2(DF(t_0))^T(F(t_0)-y_0)=0,F(t_0)=y_0$
 
@@ -1229,25 +1229,25 @@ $y_0\in F(\Omega),B_{\frac{\lambda\delta}{4}}(F(x))\in F(\Omega)$, i.e. $F(x)$ i
 
 let $F\in C^k(\Omega,R^d)$ and DF be invertible at $p\in\Omega$, then $\exists U$: neighborhood of $p$ and $V$: neighborhood of $F(p)$ s.t. $F:U\to V$ is bijective and $F^{-1}\in C^k(V,U)$
 
-Proof. by the latest two thms, $\exists U$: neighborhood of $p,F|_U$ is injective, let $V:=F(U),V$ is open, i.e. $V$ is a neighborhood of $F(p)$, then $F:U\to V$ is bijective
+Proof. by the latest two thms, $\exists U$: neighborhood of $p,F\vert _U$ is injective, let $V:=F(U),V$ is open, i.e. $V$ is a neighborhood of $F(p)$, then $F:U\to V$ is bijective
 
 it suffices to show $F^{-1}\in C^k(V,U)$
 
 $\forall y,y'\in V,\exists x,x'\in U,f(x)=y,f(x')=y'$
 
-by the structure of $U,\exists\sigma>0,||f(x')-f(x)||\geq \sigma||x'-x||$
+by the structure of $U,\exists\sigma>0,\vert \vert f(x')-f(x)\vert \vert \geq \sigma\vert \vert x'-x\vert \vert $
 
-i.e. $||f^{-1}(y')-f^{-1}(y)||\leq \frac{1}{\sigma}||y'-y||$
+i.e. $\vert \vert f^{-1}(y')-f^{-1}(y)\vert \vert \leq \frac{1}{\sigma}\vert \vert y'-y\vert \vert $
 
 $f^{-1}$ is locally Lipchitz, thus continuous
 
 $\forall y,y'\in V,y'-y=F(F^{-1}(y'))-F(F^{-1}(y))$
 
-$=DF(F^{-1}(y))(F^{-1}(y')-F^{-1}(y))+o(||F^{-1}(y')-F^{-1}(y)||)$
+$=DF(F^{-1}(y))(F^{-1}(y')-F^{-1}(y))+o(\vert \vert F^{-1}(y')-F^{-1}(y)\vert \vert )$
 
-$=DF(F^{-1}(y))(F^{-1}(y')-F^{-1}(y))+o(||y'-y||)$
+$=DF(F^{-1}(y))(F^{-1}(y')-F^{-1}(y))+o(\vert \vert y'-y\vert \vert )$
 
-$F^{-1}(y')-F^{-1}(y)=(DF(F^{-1}(y)))^{-1}(y'-y)+o(||y'-y||)$
+$F^{-1}(y')-F^{-1}(y)=(DF(F^{-1}(y)))^{-1}(y'-y)+o(\vert \vert y'-y\vert \vert )$
 
 i.e. $F^{-1}$ is differentiable at $y$ and $D(F^{-1})(y)=(DF(F^{-1}(y)))^{-1}$
 
@@ -1271,7 +1271,7 @@ Proof. let $H:W\to R^{n+m},H(x,y):=(x,F(x,y))$, then $H\in C^k(W,R^{n+m}),DH=\be
 
 by inverse mapping thm, $\exists V'\times V'',V'\subset R^n,V''\subset R^m$ be a neighborhood of $(x,y),U$ be a neighborhood of $(x,F(x,y))$, and $H^{-1}:=((H^{-1})_1, \dots ,(H^{-1})_{n+m})\in C^k(U,V'\times V'')$,$H^{-1}(x,F(x,y))=(x,y)$
 
-define $V:=\lbrace x\in R^n|(x,0)\in U\rbrace$ and $g:V\to R^m,g(x):=((H^{-1})_{n+1}(x,0), \dots ,(H^{-1})_{n+m}(x,0))$, clearly, $g\in C^k(V,R^m)$
+define $V:=\lbrace x\in R^n\vert (x,0)\in U\rbrace$ and $g:V\to R^m,g(x):=((H^{-1})_{n+1}(x,0), \dots ,(H^{-1})_{n+m}(x,0))$, clearly, $g\in C^k(V,R^m)$
 
 (i) note that $H(x_0,y_0)=(x_0,0)$, thus $H^{-1}(x_0,0)=(x_0,y_0)$, i.e. $g(x_0)=y_0$
 
@@ -1305,19 +1305,19 @@ let $U\in R^d$ be open, $f\in C^2(U,R),\nabla f(x_0)=0$, then
 
 the situation of maximun is similar
 
-Proof. note that by Taylor, $f(x_0+h)-f(x_0)=\frac{1}{2}h^THess(f)(x_0)h+o(||h||^2)$ as $||h||\to 0$
+Proof. note that by Taylor, $f(x_0+h)-f(x_0)=\frac{1}{2}h^THess(f)(x_0)h+o(\vert \vert h\vert \vert ^2)$ as $\vert \vert h\vert \vert \to 0$
 
-(1) $\forall \nu\in R^d,||\nu||=1$, choose $h=t\nu,t\in R$
+(1) $\forall \nu\in R^d,\vert \vert \nu\vert \vert =1$, choose $h=t\nu,t\in R$
 
 then $0\leq f(x_0+h)-f(x_0)=t^2(\frac{1}{2}\nu^THess(f)(x_0)\nu+o(1))$
 
 let $t\to 0,\frac{1}{2}\nu^THess(f)(x_0)\nu\geq 0$
 
-as $\forall \nu\in R^d,||\nu||=1$ the inequality holds, $Hess(f)(x_0)\geq 0$
+as $\forall \nu\in R^d,\vert \vert \nu\vert \vert =1$ the inequality holds, $Hess(f)(x_0)\geq 0$
 
-(2) $\exists P\in GL_d(R),Hess(f)(x_0)=P^TP,\exists \lambda>0,||Px||\geq \lambda ||x||,\forall x\in R^d$, i.e. $h^THess(f)(x_0)h\geq\lambda^2||x||^2$
+(2) $\exists P\in GL_d(R),Hess(f)(x_0)=P^TP,\exists \lambda>0,\vert \vert Px\vert \vert \geq \lambda \vert \vert x\vert \vert ,\forall x\in R^d$, i.e. $h^THess(f)(x_0)h\geq\lambda^2\vert \vert x\vert \vert ^2$
 
-thus, let $||h||\to 0,f(x_0+h)-f(x_0)\geq\frac{\lambda^2}{2}||h||^2+o(||h||^2)>0$, i.e. $x_0$ is strict local minimun of $f$
+thus, let $\vert \vert h\vert \vert \to 0,f(x_0+h)-f(x_0)\geq\frac{\lambda^2}{2}\vert \vert h\vert \vert ^2+o(\vert \vert h\vert \vert ^2)>0$, i.e. $x_0$ is strict local minimun of $f$
 
 ### Def. differentiable curve
 
@@ -1417,9 +1417,9 @@ formally, solving $(*)$ is equivlant to find the critical point $(a,\lambda_0)$ 
 
 ### Def. box
 
-let $I_j\subset R,j=1,2, \dots ,n$ be bounded intervals, $I=I_1\times I_2\times \dots \times I_n\subset R^n$ is called a box, and $|I|:=\prod_{j=1}^n|I_j|$ is called the measure of $I$
+let $I_j\subset R,j=1,2, \dots ,n$ be bounded intervals, $I=I_1\times I_2\times \dots \times I_n\subset R^n$ is called a box, and $\vert I\vert :=\prod_{j=1}^n\vert I_j\vert $ is called the measure of $I$
 
-in particular, if $|I_1|= \dots =|I_n|$, then $I$ is called a cube
+in particular, if $\vert I_1\vert = \dots =\vert I_n\vert $, then $I$ is called a cube
 
 in the following parts, we take $n=2$ as example, situation in higher dimension is similar
 
@@ -1427,17 +1427,17 @@ in the following parts, we take $n=2$ as example, situation in higher dimension 
 
 let $I=[a,b]\times [c,d]\subset R^2$, for any partitions $\pi_x:a=x_0<x_1< \dots <x_n=b,\pi_y:c=y_0<y_1< \dots <y_m=d$, $\pi:=\pi_x\times\pi_y$ is called a partition of $I$
 
-define $I_{ij}:=[x_i,x_{i+1}]\times [y_j,y_{j+1}],||\pi||:=\max_{i,j}diam(I_{ij})$ is called the norm of $\pi$
+define $I_{ij}:=[x_i,x_{i+1}]\times [y_j,y_{j+1}],\vert \vert \pi\vert \vert :=\max_{i,j}diam(I_{ij})$ is called the norm of $\pi$
 
 ### Def.
 
-let $F:I\to R,I\subset R^2$ be a box, if their exists $A\in R$ s.t. $\forall\epsilon>0,\exists\delta>0$ s.t. if $||\pi||<\delta,|\sum_{i,j}F(\xi_i,\eta_j)|I_{ij}|-A|<\epsilon,\forall (\xi_i,\eta_j)\in I_{ij}$, then $F$ is called Riemann integrable on $I$, written as $F\in R(I)$, and $\int_IF=\int_IF(x,y)dxdy:=A$
+let $F:I\to R,I\subset R^2$ be a box, if their exists $A\in R$ s.t. $\forall\epsilon>0,\exists\delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta,\vert \sum_{i,j}F(\xi_i,\eta_j)\vert I_{ij}\vert -A\vert <\epsilon,\forall (\xi_i,\eta_j)\in I_{ij}$, then $F$ is called Riemann integrable on $I$, written as $F\in R(I)$, and $\int_IF=\int_IF(x,y)dxdy:=A$
 
 Rmk. similar to one variable, $f$ is Riemann integrable $\Rightarrow f$ is bounded
 
 ### Def.
 
-let $F:I\to R$ be bounded, $\pi$ is a partition of $I$, define $m_{ij}:=\inf_{I_{ij}}F,M_{ij}:=\sup_{I_{ij}}F,\omega_{ij}:=M_{ij}-m_{ij}$ is called the oscillation of $F$, $S(\pi):=\sum_{i,j}M_{ij}|I_{ij}|,s(\pi):=\sum_{i,j}m_{ij}|I_{ij}|$ are called the Darboux upper/lower sum
+let $F:I\to R$ be bounded, $\pi$ is a partition of $I$, define $m_{ij}:=\inf_{I_{ij}}F,M_{ij}:=\sup_{I_{ij}}F,\omega_{ij}:=M_{ij}-m_{ij}$ is called the oscillation of $F$, $S(\pi):=\sum_{i,j}M_{ij}\vert I_{ij}\vert ,s(\pi):=\sum_{i,j}m_{ij}\vert I_{ij}\vert $ are called the Darboux upper/lower sum
 
 if $\pi_x',\pi_y'$ are refinements of $\pi_x,\pi_y$, then $\pi':=\pi_x'\times\pi_y'$ is called the refinement of $\pi$, written as $\pi'<\pi$
 
@@ -1449,23 +1449,23 @@ Rmk. similar to single variable
 
 ### Thm.
 
-$\inf_\pi S(\pi)=\lim_{||\pi||\to 0}S(\pi),\sup_\pi s(\pi)=\lim_{||\pi||\to 0}s(\pi)$
+$\inf_\pi S(\pi)=\lim_{\vert \vert \pi\vert \vert \to 0}S(\pi),\sup_\pi s(\pi)=\lim_{\vert \vert \pi\vert \vert \to 0}s(\pi)$
 
 Proof. $\forall\epsilon>0,\exists \pi'$ s.t. $S(\pi')<\inf_\pi S(\pi)+\epsilon$
 
-assume the partition rectangles of $\pi'$ are $I'_{ij}=[x_i,x_{i+1}]\times [y_j,y_{j+1}]$, then $\exists \delta>0$ s.t. $\sum_{i,j}(|I'_{ij}|-|I''_{ij}|)<\epsilon$, where $I''_{ij}:=[x_i+\delta,x_{i+1}-\delta]\times [y_j+\delta,y_{j+1}-\delta]$
+assume the partition rectangles of $\pi'$ are $I'_{ij}=[x_i,x_{i+1}]\times [y_j,y_{j+1}]$, then $\exists \delta>0$ s.t. $\sum_{i,j}(\vert I'_{ij}\vert -\vert I''_{ij}\vert )<\epsilon$, where $I''_{ij}:=[x_i+\delta,x_{i+1}-\delta]\times [y_j+\delta,y_{j+1}-\delta]$
 
-$\forall \pi$ satisfies $||\pi||<\delta$, claim that every partition rectangle of $\pi$, such as $I_{ij}$, satisfies either
+$\forall \pi$ satisfies $\vert \vert \pi\vert \vert <\delta$, claim that every partition rectangle of $\pi$, such as $I_{ij}$, satisfies either
 
 (i)  $I_{ij}\subset I'_{ij}$
 
 (ii) $I_{ij}\subset \cup I'_{ij}\setminus \cup {I''_{ij}}$
 
-thus, $S(\pi)=S_{(i)}(\pi)+S_{(ii)}(\pi)\leq S(\pi')+(\sup f-\inf f)|\cup I'_{ij}\setminus \cup {I''_{ij}}|$
+thus, $S(\pi)=S_{(i)}(\pi)+S_{(ii)}(\pi)\leq S(\pi')+(\sup f-\inf f)\vert \cup I'_{ij}\setminus \cup {I''_{ij}}\vert $
 
 $<\inf_\pi S(\pi)+(1+\sup f-\inf f)\epsilon$
 
-i.e. $\lim_{||\pi||\to 0}S(\pi)=\inf_\pi S(\pi)$
+i.e. $\lim_{\vert \vert \pi\vert \vert \to 0}S(\pi)=\inf_\pi S(\pi)$
 
 ### Thm.
 
@@ -1475,11 +1475,11 @@ let $F:I\to R$ be bounded, then the following are equivlant
 
 (2) $\inf_\pi S(\pi)=\sup_\pi s(\pi)$
 
-(3) $\lim_{||\pi||\to 0}\sum_{i,j}\omega_{ij}|I_{ij}|=0$
+(3) $\lim_{\vert \vert \pi\vert \vert \to 0}\sum_{i,j}\omega_{ij}\vert I_{ij}\vert =0$
 
-(4) $\forall\epsilon>0,\exists \pi$ s.t. $\sum_{i,j}\omega_{ij}|I_{ij}|<\epsilon$
+(4) $\forall\epsilon>0,\exists \pi$ s.t. $\sum_{i,j}\omega_{ij}\vert I_{ij}\vert <\epsilon$
 
-(5) $\forall \eta,\tau>0,\exists \delta>0$ s.t. if $||\pi||<\delta, \sum_{\omega_{ij}\geq\eta}|I_{ij}|<\tau$
+(5) $\forall \eta,\tau>0,\exists \delta>0$ s.t. if $\vert \vert \pi\vert \vert <\delta, \sum_{\omega_{ij}\geq\eta}\vert I_{ij}\vert <\tau$
 
 Proof. similar to single variable, omitted
 
@@ -1489,7 +1489,7 @@ $\Omega\subset R^d$ is called a Lebesgue measure zero set if $\forall\epsilon>0$
 
 (i) $\Omega\subset \cup_j I_j$
 
-(ii) $\sum_j |I_j|<\epsilon$
+(ii) $\sum_j \vert I_j\vert <\epsilon$
 
 Examples.
 
@@ -1503,7 +1503,7 @@ Examples.
 
 ### Def. oscillation
 
-if $F$ is bounded on a neighborhood of $x\in R^d, \omega_F(x):=\lim_{\delta\downarrow 0}\sup_{u,v\in B_\delta(x)}|F(u)-F(v)|$ is called the oscillation of $F$ at $x$
+if $F$ is bounded on a neighborhood of $x\in R^d, \omega_F(x):=\lim_{\delta\downarrow 0}\sup_{u,v\in B_\delta(x)}\vert F(u)-F(v)\vert $ is called the oscillation of $F$ at $x$
 
 Rmk. $F$ is continuous at $x$ iff $\omega_F(x)=0$
 
@@ -1513,9 +1513,9 @@ let $F:I\to R$ be bounded, then $F\in R(I)\Leftrightarrow D_f$ is a $L_0$ set
 
 ### Def. Jordan measurable set (J set)
 
-$\Omega\subset I\subset R^d$ is called a Jordan measurable set if $\chi_\Omega\in R(I)$, moreover, $|\Omega|:=\int_I\chi_\Omega$ is called the measure of $\Omega$, where $\chi_\Omega(x):=\begin{cases}1,x\in\Omega\\  0,x\in I\setminus\Omega\end{cases}$
+$\Omega\subset I\subset R^d$ is called a Jordan measurable set if $\chi_\Omega\in R(I)$, moreover, $\vert \Omega\vert :=\int_I\chi_\Omega$ is called the measure of $\Omega$, where $\chi_\Omega(x):=\begin{cases}1,x\in\Omega\\  0,x\in I\setminus\Omega\end{cases}$
 
-Rmk. $|\Omega|$ is well defined since $\int_I\chi_\Omega$ is independent of $I$
+Rmk. $\vert \Omega\vert $ is well defined since $\int_I\chi_\Omega$ is independent of $I$
 
 ### Thm.
 
@@ -1529,7 +1529,7 @@ $\Rightarrow \chi_{\overline{\Omega}}\in R(I)\Rightarrow \overline{\Omega}$ is a
 
 ### Def. Jordan measure zero set ($J_0$ set)
 
-$\Omega\subset R^d$ is called a Jordan measure zero set if $\Omega$ is a J set and $|\Omega|=0$
+$\Omega\subset R^d$ is called a Jordan measure zero set if $\Omega$ is a J set and $\vert \Omega\vert =0$
 
 ### Thm.
 
@@ -1537,27 +1537,27 @@ $\Omega\subset R^d$ is a $J_0$ set iff $\forall\epsilon>0,\exists$ finite open b
 
 (i) $\Omega\subset \cup_{j=1}^N I_j$
 
-(ii) $\sum_{j=1}^N |I_j|<\epsilon$
+(ii) $\sum_{j=1}^N \vert I_j\vert <\epsilon$
 
 Proof. $\Rightarrow \Omega$ is a J set $\Rightarrow \partial\Omega$ is a $L_0$ set
 
-$\forall \epsilon>0,\exists \lbrace I_j\rbrace_{j=1}^\infty$ s.t. $\partial\Omega\subset \cup_{j=1}^\infty I_j,\sum_{j=1}^\infty |I_j|<\epsilon$
+$\forall \epsilon>0,\exists \lbrace I_j\rbrace_{j=1}^\infty$ s.t. $\partial\Omega\subset \cup_{j=1}^\infty I_j,\sum_{j=1}^\infty \vert I_j\vert <\epsilon$
 
 as $\partial\Omega$ is compact, by Heine-Borel, $\exists N,\partial\Omega\subset \cup_{j=1}^N I_j$
 
 note that as $\Omega$ is a $J_0$ set, $int\Omega=\emptyset,\Omega\subset\partial\Omega$
 
-thus, $\Omega\subset \cup_{j=1}^N I_j,\sum_{j=1}^N |I_j|<\epsilon$
+thus, $\Omega\subset \cup_{j=1}^N I_j,\sum_{j=1}^N \vert I_j\vert <\epsilon$
 
 $\Leftarrow$ as $\partial I$ is a $L_0$ set, we can choose $I_j$ all closed
 
-then, $\forall\epsilon>0,\exists \lbrace I_j\rbrace_{j=1}^N,\partial\Omega\subset\overline{\Omega}\subset \cup_{j=1}^N I_j,\sum_{j=1}^N |I_j|<\epsilon$
+then, $\forall\epsilon>0,\exists \lbrace I_j\rbrace_{j=1}^N,\partial\Omega\subset\overline{\Omega}\subset \cup_{j=1}^N I_j,\sum_{j=1}^N \vert I_j\vert <\epsilon$
 
 i.e. $D_{\chi_\Omega}=\partial\Omega$ is a $L_0$ set, $\chi_\Omega\in R(I),\Omega$ is a J set
 
 furthermore, choose the partition containing all the boundaries of $I_j$, then $\chi(x,y)=0,\forall (x,y)\notin \cup_{j=1}^N I_j$
 
-thus, $\sum_{i,k}\chi(x_i,y_k)|I_{ik}|\leq 1\cdot \sum_{i=1}^N|I_j|<\epsilon$
+thus, $\sum_{i,k}\chi(x_i,y_k)\vert I_{ik}\vert \leq 1\cdot \sum_{i=1}^N\vert I_j\vert <\epsilon$
 
 i.e. $\int_I\chi_\Omega=0,\Omega$ is a $J_0$ set
 
@@ -1575,9 +1575,9 @@ thus, $\Omega$ is a J set $\Leftrightarrow\partial\Omega$ is a $L_0$ set $\Leftr
 
 ### Thm.
 
-if $\Omega\subset R^d$ is a $L_0$ set, then $\forall \epsilon>0,\exists \lbrace c_j\rbrace_{j=1}^\infty$: open cubes s.t. $\Omega\subset \cup c_j,\sum |c_j|<\epsilon$
+if $\Omega\subset R^d$ is a $L_0$ set, then $\forall \epsilon>0,\exists \lbrace c_j\rbrace_{j=1}^\infty$: open cubes s.t. $\Omega\subset \cup c_j,\sum \vert c_j\vert <\epsilon$
 
-Proof. it suffices to show each open box $I\subset R^d$ can be covered by finite cubes $\lbrace c_j\rbrace$ and $\sum|c_j|\leq 2^d|I|$
+Proof. it suffices to show each open box $I\subset R^d$ can be covered by finite cubes $\lbrace c_j\rbrace$ and $\sum\vert c_j\vert \leq 2^d\vert I\vert $
 
 write $I=(a_1,b_1)\times (a_2,b_2)\times \dots \times (a_d,b_d),l_j:=b_j-a_j,l:=\min_jl_j$
 
@@ -1587,7 +1587,7 @@ consider $\prod_{j=1}^dp_j$ open cubes
 
 $\lbrace (a_1+k_1\frac{l}{2},a_1+(k_1+2)\frac{l}{2})\times \dots \times(a_d+k_d\frac{l}{2},a_d+(k_d+2)\frac{l}{2})\rbrace_{0\leq k_j\leq p_j-1}$
 
-clearly, the open cubes covers $I$ and $\sum|c_j|=\prod_{j=1}^dp_j\cdot l^d=\prod_{j=1}^d(p_jl)\leq \prod_{j=1}^d(2l_j)=2^d|I|$
+clearly, the open cubes covers $I$ and $\sum\vert c_j\vert =\prod_{j=1}^dp_j\cdot l^d=\prod_{j=1}^d(p_jl)\leq \prod_{j=1}^d(2l_j)=2^d\vert I\vert $
 
 ### Thm.
 
@@ -1607,19 +1607,19 @@ suppose $\overline{S}\subset\Omega\subset R^d$, $\Omega$ is a bounded region, $T
 
 (2) if $T\in Diff(\Omega)$ and S is a J set, then $T(S)$ is a J set
 
-Proof. (1)$\forall\epsilon>0,\exists$ countable cubes $\lbrace c_j\rbrace,\cup_jc_j\supset S,\sum_j|c_j|<\epsilon$
+Proof. (1)$\forall\epsilon>0,\exists$ countable cubes $\lbrace c_j\rbrace,\cup_jc_j\supset S,\sum_j\vert c_j\vert <\epsilon$
 
-let $M:=\max_{\Omega}||DT||$, then $\forall x,y\in\Omega$
+let $M:=\max_{\Omega}\vert \vert DT\vert \vert $, then $\forall x,y\in\Omega$
 
-$||T(y)-T(x)||=||\langle DT(x+\theta(y-x)),y-x\rangle||\leq M||y-x||$
+$\vert \vert T(y)-T(x)\vert \vert =\vert \vert \langle DT(x+\theta(y-x)),y-x\rangle\vert \vert \leq M\vert \vert y-x\vert \vert $
 
 consider each $c_j$, assume it is centered at $x,\forall y\in c_j$
 
-$||T(y)-T(x)||\leq M||y-x||\leq M\frac{\sqrt[d]{d|c_j|}}{2}$
+$\vert \vert T(y)-T(x)\vert \vert \leq M\vert \vert y-x\vert \vert \leq M\frac{\sqrt[d]{d\vert c_j\vert }}{2}$
 
-thus, $\exists c_j'$ be a cube, centered at $T(x)$, with the side length $M\sqrt[d]{d|c_j|}$
+thus, $\exists c_j'$ be a cube, centered at $T(x)$, with the side length $M\sqrt[d]{d\vert c_j\vert }$
 
-clearly, $c_j'\supset T(c_j)$, thus, $\cup_jc_j'\supset T(S),\sum_j|c_j'|=M^dd\sum_j|c_j|<M^dd\epsilon$
+clearly, $c_j'\supset T(c_j)$, thus, $\cup_jc_j'\supset T(S),\sum_j\vert c_j'\vert =M^dd\sum_j\vert c_j\vert <M^dd\epsilon$
 
 i.e. $T(S)$ is a $L_0$ set
 
@@ -1633,9 +1633,9 @@ S is a J set $\Rightarrow \partial S$ is a $L_0$ set $\Rightarrow T(\partial S)=
 
 let $\Omega\subset R^d$ be a J set, $F\in R(\Omega)$, then $G(F):=\lbrace (x,y)\in R^{d+1},x\in \Omega,y=F(x)\rbrace$ is a $J_0$ set
 
-Proof. $\forall\epsilon>0,\exists \pi$: partition of $\Omega$ s.t. $\sum_j\omega_j|I_j|<\epsilon$
+Proof. $\forall\epsilon>0,\exists \pi$: partition of $\Omega$ s.t. $\sum_j\omega_j\vert I_j\vert <\epsilon$
 
-i.e. $\sum_{j}|I_{j}\times[m_j,M_j]|<\epsilon$
+i.e. $\sum_{j}\vert I_{j}\times[m_j,M_j]\vert <\epsilon$
 
 clearly, $\cup_j(I_{j}\times[m_j,M_j])\supset G(F)$, i.e. $G(F)$ is a $J_0$ set
 
@@ -1659,7 +1659,7 @@ assume $f,g\in R(\Omega)$, then
 
 (1) $\int_\Omega (f+g)=\int_\Omega f+\int_\Omega g$
 
-(2) if $f\leq g,\int_\Omega f\leq\int_\Omega g$, in particular, $|\int_\Omega f|\leq\int_\Omega |f|$
+(2) if $f\leq g,\int_\Omega f\leq\int_\Omega g$, in particular, $\vert \int_\Omega f\vert \leq\int_\Omega \vert f\vert $
 
 Proof. similar to single variable, omitted
 
@@ -1679,11 +1679,11 @@ $\pi_x:a=x_0<x_1< \dots <x_n=b,\pi_y:c=y_0<y_1< \dots <y_m<d$
 
 note that $\sum_{j=0}^{m-1}\phi(\xi_j)\Delta y_j=\sum_{j=0}^{m-1}\sum_{i=0}^{n-1}\int_{x_i}^{x_{i+1}}F(x,\xi_j)dx\Delta y_j$
 
-thus, $\sum_{j=0}^{m-1}\sum_{i=0}^{n-1}m_{ij}|I_{ij}|\leq \sum_{j=0}^{m-1}\phi(\xi_j)\Delta y_j\leq \sum_{j=0}^{m-1}\sum_{i=0}^{n-1}M_{ij}|I_{ij}|$
+thus, $\sum_{j=0}^{m-1}\sum_{i=0}^{n-1}m_{ij}\vert I_{ij}\vert \leq \sum_{j=0}^{m-1}\phi(\xi_j)\Delta y_j\leq \sum_{j=0}^{m-1}\sum_{i=0}^{n-1}M_{ij}\vert I_{ij}\vert $
 
-note that $\sum_{j=0}^{m-1}\sum_{i=0}^{n-1}m_{ij}|I_{ij}|\leq \int_I F\leq \sum_{j=0}^{m-1}\sum_{i=0}^{n-1}M_{ij}|I_{ij}|$
+note that $\sum_{j=0}^{m-1}\sum_{i=0}^{n-1}m_{ij}\vert I_{ij}\vert \leq \int_I F\leq \sum_{j=0}^{m-1}\sum_{i=0}^{n-1}M_{ij}\vert I_{ij}\vert $
 
-thus, $|\sum_{j=0}^{m-1}\phi(\xi_j)\Delta y_j-\int_IF|\leq \sum_{i=0}^{n-1}\omega_{ij}|I_{ij}|\to 0$
+thus, $\vert \sum_{j=0}^{m-1}\phi(\xi_j)\Delta y_j-\int_IF\vert \leq \sum_{i=0}^{n-1}\omega_{ij}\vert I_{ij}\vert \to 0$
 
 i.e. $\phi(y)\in R[c,d]$, and $\int_c^d\phi(y)dy=\int_IF$
 
@@ -1695,7 +1695,7 @@ let $F\in C(\Omega)$, where $\Omega\subset I=[a,b]\times[c,d]\subset R^2$ be a J
 
 ### Def. support 支集
 
-let $\phi:\Omega\subset R^d\to R^n$, then $supp\phi:=\overline{\lbrace x\in\Omega|\phi(x)\neq 0\rbrace}$ is called the support of $\phi$
+let $\phi:\Omega\subset R^d\to R^n$, then $supp\phi:=\overline{\lbrace x\in\Omega\vert \phi(x)\neq 0\rbrace}$ is called the support of $\phi$
 
 Example: the support of Dirichlet function is $[0,1]$
 
@@ -1709,9 +1709,9 @@ firstly, note that $f(x):=e^{-\frac{1}{x}}\chi_{[0,\infty)}\in C^\infty(R)$
 
 define $g(x):=\frac{f(x)}{f(x)+f(\delta-\delta'-x)}=\begin{cases}0,x\leq 0\\ \frac{f(x)}{f(x)+f(\delta-\delta'-x)}\in(0,1),x\in(0,\delta-\delta')\\ 1,x\geq \delta-\delta'\\ \end{cases}$
 
-define $\psi(x):=g(\delta-|x|)=\begin{cases}1,|x|\leq\delta' \\ g(\delta-|x|)\in(0,1),|x|\in(\delta',\delta)\\ 0,|x|\geq\delta\\ \end{cases}$
+define $\psi(x):=g(\delta-\vert x\vert )=\begin{cases}1,\vert x\vert \leq\delta' \\ g(\delta-\vert x\vert )\in(0,1),\vert x\vert \in(\delta',\delta)\\ 0,\vert x\vert \geq\delta\\ \end{cases}$
 
-thus, we find that $\phi(x):=\psi(||x||)$ satisfies the conditions
+thus, we find that $\phi(x):=\psi(\vert \vert x\vert \vert )$ satisfies the conditions
 
 ### Thm. partition of unity
 
@@ -1813,7 +1813,7 @@ thus, $F(x)=B_1\circ \dots \circ B_{d-1}\circ G_d\circ \dots \circ G_1 (x),\fora
 
 ### Thm. change of variables in multiple integrals
 
-let $\Omega\subset R^d$ be open, $T\in Diff(\Omega)$ and let S be a J set s.t. $\overline{S}\subset \Omega$ if $F\in C^1,suppF\subset T(S)$, then $\int_{T(S)}F(y)dy=\int_S F\circ T(x)|detDT|dx$
+let $\Omega\subset R^d$ be open, $T\in Diff(\Omega)$ and let S be a J set s.t. $\overline{S}\subset \Omega$ if $F\in C^1,suppF\subset T(S)$, then $\int_{T(S)}F(y)dy=\int_S F\circ T(x)\vert detDT\vert dx$
 
 Proof. by thm above, $T(S)$ is a J set
 
@@ -1823,7 +1823,7 @@ WLOG, assume $T(x_1, \dots ,x_d):=(x_1, \dots ,x_{d-1},t(x))$ be a dilation
 
 WLOG, assume $\partial_dt(x)>0$
 
-then $\int_S F\circ T(x)|detDT(x)|dx=\int dx_1 \dots dx_{d-1}\int F\circ T(x)\partial_dt(x)dx_d$
+then $\int_S F\circ T(x)\vert detDT(x)\vert dx=\int dx_1 \dots dx_{d-1}\int F\circ T(x)\partial_dt(x)dx_d$
 
 $=\int dx_1 \dots dx_{d-1}\int F\circ T(x)d(t(x))_d=\int_SF\circ T(x)d(x_1, \dots ,x_{d-1},t(x))$
 
@@ -1831,17 +1831,17 @@ $=\int_SF\circ T(x)d(T(x))=\int_{T(S)}F(y)dy$
 
 Step 2. it holds for permutations
 
-in fact, if T is a permutation, $|detDT|=1$, it is Fubini thm
+in fact, if T is a permutation, $\vert detDT\vert =1$, it is Fubini thm
 
 Step 3. it keeps after composition
 
 if $P,Q$ satisfies the equality, then
 
-$\int_{P\circ Q(S)}F(z)dz=\int_{Q(S)}F\circ P(y)|detDP(y)|dy$
+$\int_{P\circ Q(S)}F(z)dz=\int_{Q(S)}F\circ P(y)\vert detDP(y)\vert dy$
 
-$=\int_SF\circ P\circ Q(x)|detDP(Q(x))||detDQ(x)|dx$
+$=\int_SF\circ P\circ Q(x)\vert detDP(Q(x))\vert \vert detDQ(x)\vert dx$
 
-$=\int_SF\circ(P\circ Q)(x)|detD(P\circ Q)|dx$
+$=\int_SF\circ(P\circ Q)(x)\vert detD(P\circ Q)\vert dx$
 
 Step 4. the equation is true locally
 
@@ -1849,7 +1849,7 @@ by elementry decomposition, $\forall x_0\in S,\exists U$: neighborhood of $x_0, 
 
 note that translation(平移) does not change the value of the integral
 
-thus, $\int_{T(U)}F(y)dy=\int_U F\circ T(x)|detDT|dx$
+thus, $\int_{T(U)}F(y)dy=\int_U F\circ T(x)\vert detDT\vert dx$
 
 Step 5. the equation is true globally on S
 
@@ -1863,13 +1863,13 @@ i.e. $\sum_{j=1}^N\phi_j(x)F(x)=F(x),\forall x\in suppF$
 
 thus, $\int_{T(S)}F(y)dy=\sum_{j=1}^N\int_{T(S)}\phi_j(y)F(y)dy$
 
-$=\sum_{j=1}^N\int_S\phi_j(T(x))F(T(x))|detDT|dx=\int_SF\circ T(x)|detDT|dx$
+$=\sum_{j=1}^N\int_S\phi_j(T(x))F(T(x))\vert detDT\vert dx=\int_SF\circ T(x)\vert detDT\vert dx$
 
 ### Thm. smooth approximation 光滑逼近
 
-let $\Omega\subset R^n$ be compact and let $F\in C(\Omega,R^d)$, then $\forall\epsilon>0,\exists G\in C^\infty(\Omega,R^d)$ s.t. $||F(x)-G(x)||<\epsilon,\forall x\in\Omega$
+let $\Omega\subset R^n$ be compact and let $F\in C(\Omega,R^d)$, then $\forall\epsilon>0,\exists G\in C^\infty(\Omega,R^d)$ s.t. $\vert \vert F(x)-G(x)\vert \vert <\epsilon,\forall x\in\Omega$
 
-Proof. $\forall x\in \Omega, \exists U_x$: neighborhood of $x$ s.t. $\sup_{u,v\in U_x}||F(u)-F(v)||<\epsilon$
+Proof. $\forall x\in \Omega, \exists U_x$: neighborhood of $x$ s.t. $\sup_{u,v\in U_x}\vert \vert F(u)-F(v)\vert \vert <\epsilon$
 
 as $\lbrace U_x\rbrace_{x\in\Omega}$ is an open cover of $\Omega$, by partition of unity, $\exists \phi_1, \dots ,\phi_N\in C^\infty$ s.t.
 
@@ -1881,13 +1881,13 @@ as $\lbrace U_x\rbrace_{x\in\Omega}$ is an open cover of $\Omega$, by partition 
 
 define $G(x):=\sum_j\phi_j(x)F(x_j)$, clearly, $G\in C^\infty$
 
-$\forall x\in\Omega,||F(x)-G(x)||=||\sum_j\phi_j(x)F(x)-\sum_j\phi_j(x)F(x_j)||$
+$\forall x\in\Omega,\vert \vert F(x)-G(x)\vert \vert =\vert \vert \sum_j\phi_j(x)F(x)-\sum_j\phi_j(x)F(x_j)\vert \vert $
 
-note that $||\phi_j(x)(F(x)-F(x_j))||\begin{cases}\leq \phi_j(x)||F(x)-F(x_j)||<\phi_j(x)\epsilon, x\in U_{x_j}\\ =0,x\notin U_{x_j}\end{cases}$
+note that $\vert \vert \phi_j(x)(F(x)-F(x_j))\vert \vert \begin{cases}\leq \phi_j(x)\vert \vert F(x)-F(x_j)\vert \vert <\phi_j(x)\epsilon, x\in U_{x_j}\\ =0,x\notin U_{x_j}\end{cases}$
 
-thus, $||F(x)-G(x)||=||\sum_j\phi_j(x)(F(x)-F(x_j))||$
+thus, $\vert \vert F(x)-G(x)\vert \vert =\vert \vert \sum_j\phi_j(x)(F(x)-F(x_j))\vert \vert $
 
-$\leq \sum_j||\phi_j(x)(F(x)-F(x_j))||<\sum_j\phi_j(x)\epsilon=\epsilon$
+$\leq \sum_j\vert \vert \phi_j(x)(F(x)-F(x_j))\vert \vert <\sum_j\phi_j(x)\epsilon=\epsilon$
 
 i.e. $G(x)$ satisfies the condition
 
@@ -1905,53 +1905,53 @@ $=\sum_{j=0}^{n-1}\sqrt{(x'(\xi_j))^2+(y'(\eta_j))^2}\Delta t_j$
 
 introduce $S_n:=\sum_{j=0}^{n-1}\sqrt{(x'(\xi_j))^2+(y'(\xi_j))^2}\Delta t_j$ be the Riemann sum of $\int_\alpha^\beta \sqrt{(x'(t))^2+(y'(t))^2}dt$
 
-note that $|\sqrt{a^2+b^2}-\sqrt{a^2+c^2}|\leq |b-c|$
+note that $\vert \sqrt{a^2+b^2}-\sqrt{a^2+c^2}\vert \leq \vert b-c\vert $
 
-thus, $|L_n-S_n|\leq\sum_{j=0}^{n-1}|y'(\xi_j)-y'(\eta_j)|\Delta t_j\leq \sum_{j=0}^{n-1}\omega_j(y')\Delta t_j\to 0$
+thus, $\vert L_n-S_n\vert \leq\sum_{j=0}^{n-1}\vert y'(\xi_j)-y'(\eta_j)\vert \Delta t_j\leq \sum_{j=0}^{n-1}\omega_j(y')\Delta t_j\to 0$
 
 i.e. $L(\sigma)=\lim_{n\to\infty}L_n=\int_\alpha^\beta \sqrt{(x'(t))^2+(y'(t))^2}dt$
 
-Rmk. for $\sigma:[\alpha,\beta]\to R^d$, we can define its length similarly as $\int_\alpha^\beta ||\sigma'(t)||dt$
+Rmk. for $\sigma:[\alpha,\beta]\to R^d$, we can define its length similarly as $\int_\alpha^\beta \vert \vert \sigma'(t)\vert \vert dt$
 
-Rmk. also, we can use the tangent vector to measure the length, $L(\sigma)=\int_\sigma dl:=\lim_{||\pi||\to 0}\sum_{j=0}^{n-1}||\sigma'(t_j)||\Delta t_j$, the value is $\int_\alpha^\beta ||\sigma'(t)||dt$ too
+Rmk. also, we can use the tangent vector to measure the length, $L(\sigma)=\int_\sigma dl:=\lim_{\vert \vert \pi\vert \vert \to 0}\sum_{j=0}^{n-1}\vert \vert \sigma'(t_j)\vert \vert \Delta t_j$, the value is $\int_\alpha^\beta \vert \vert \sigma'(t)\vert \vert dt$ too
 
 ### Def. line integral
 
-let $\sigma:[\alpha,\beta]\to R^n$ be smooth ($\sigma\in C^1[\alpha,\beta],\sigma'(t)\neq 0,\forall x\in[\alpha,\beta]$) and let $F\in R(\sigma([\alpha,\beta]),R)$, then $\int_\sigma Fdl:=\int_\alpha^\beta F\circ\sigma(t)||\sigma'(t)||dt$
+let $\sigma:[\alpha,\beta]\to R^n$ be smooth ($\sigma\in C^1[\alpha,\beta],\sigma'(t)\neq 0,\forall x\in[\alpha,\beta]$) and let $F\in R(\sigma([\alpha,\beta]),R)$, then $\int_\sigma Fdl:=\int_\alpha^\beta F\circ\sigma(t)\vert \vert \sigma'(t)\vert \vert dt$
 
 ### Def. parallelopiped
 
-given independent vectors $u_1, \dots ,u_d\in R^n$, we define the d-dimensional parallelopiped to be $P[u_1, \dots ,u_d]:=\lbrace \sum_{j=1}^dc_ju_j|c_j\in[0,1]\rbrace$
+given independent vectors $u_1, \dots ,u_d\in R^n$, we define the d-dimensional parallelopiped to be $P[u_1, \dots ,u_d]:=\lbrace \sum_{j=1}^dc_ju_j\vert c_j\in[0,1]\rbrace$
 
-Rmk. let $U:=(u_1, \dots ,u_d),I:=[0,1]^n\subset R^n$, then equivlantly, $P[u_1, \dots ,u_d]=U(I)=\lbrace Uc|c\in I\rbrace$
+Rmk. let $U:=(u_1, \dots ,u_d),I:=[0,1]^n\subset R^n$, then equivlantly, $P[u_1, \dots ,u_d]=U(I)=\lbrace Uc\vert c\in I\rbrace$
 
 ### Thm.
 
-if $d=n,|detU|=|U(I)|=|P[u_1, \dots ,u_d]|$
+if $d=n,\vert detU\vert =\vert U(I)\vert =\vert P[u_1, \dots ,u_d]\vert $
 
-Proof. $\int_U(I)dy=\int_I|detDU|dx=|detDU|\int_Idx=|detDU|$
+Proof. $\int_U(I)dy=\int_I\vert detDU\vert dx=\vert detDU\vert \int_Idx=\vert detDU\vert $
 
 Rmk. the thm shows the geometric meaning of determinant
 
 ### Thm. measure of parallelopiped
 
-let $P[u_1, \dots ,u_d]\subset R^n(d\leq n),U:=(u_1, \dots ,u_d)$, then the d-dimensional measure $|P[u_1, \dots ,u_d]|=\sqrt{detU^TU}$
+let $P[u_1, \dots ,u_d]\subset R^n(d\leq n),U:=(u_1, \dots ,u_d)$, then the d-dimensional measure $\vert P[u_1, \dots ,u_d]\vert =\sqrt{detU^TU}$
 
 Proof. by Gram-Schmidt, $\exists Q\in M_d(R)$: upper triangle, and all the main diagonal elements are 1 s.t. $UQ=(a_1, \dots ,a_d)=:A,\langle a_i,a_j\rangle =0,\forall i\neq j$
 
-by the definition of measure, $|P[a_1, \dots ,a_d]|=||a_1|| \dots ||a_d||$
+by the definition of measure, $\vert P[a_1, \dots ,a_d]\vert =\vert \vert a_1\vert \vert  \dots \vert \vert a_d\vert \vert $
 
-on the other hand, $detA^TA=||a_1||^2 \dots ||a_d||^2$
+on the other hand, $detA^TA=\vert \vert a_1\vert \vert ^2 \dots \vert \vert a_d\vert \vert ^2$
 
-note that $\int_{P[a_1, \dots ,a_d]}dy=\int_{QP[u_1, \dots ,u_d]}dy=\int_{P[u_1, \dots ,u_d]}|detDQ|dx=\int_{P[u_1, \dots ,u_d]}dx$
+note that $\int_{P[a_1, \dots ,a_d]}dy=\int_{QP[u_1, \dots ,u_d]}dy=\int_{P[u_1, \dots ,u_d]}\vert detDQ\vert dx=\int_{P[u_1, \dots ,u_d]}dx$
 
-thus, $\int_{P[u_1, \dots ,u_d]}dx=|P[a_1, \dots ,a_d]|=\sqrt{detA^TA}$
+thus, $\int_{P[u_1, \dots ,u_d]}dx=\vert P[a_1, \dots ,a_d]\vert =\sqrt{detA^TA}$
 
 $=\sqrt{detQdetQ^TdetU^TU}=\sqrt{detU^TU}$
 
 Rmk. to avoid confusion, we introduce the notation $\mu_d(P[u_1, \dots ,u_d]):=\sqrt{detU^TU}$, and is called the d-dimensional Jordan measure
 
-Rmk. more generally, let $\Omega\subset R^d$ be a J set and $L:\Omega\to R$ be an affine maping, then $\mu_d(L(\Omega))=\sqrt{det(DL)^TDL}|\Omega|$
+Rmk. more generally, let $\Omega\subset R^d$ be a J set and $L:\Omega\to R$ be an affine maping, then $\mu_d(L(\Omega))=\sqrt{det(DL)^TDL}\vert \Omega\vert $
 
 ### Def. k-surface
 
@@ -1961,19 +1961,19 @@ Rmk. we define the mapping $\Phi$ as k-surface, rather than $\Phi(\Omega)$
 
 Rmk. if $k=n,\mu_n(\Phi(\Omega))=\int_\Omega\sqrt{det(D\Phi)^TD\Phi}$
 
-$=\int_\Omega|detD\Phi(y)|dy=\int_{\Phi(\Omega)}dx=|\Phi(\Omega)|$
+$=\int_\Omega\vert detD\Phi(y)\vert dy=\int_{\Phi(\Omega)}dx=\vert \Phi(\Omega)\vert $
 
 ### Thm.
 
-let $F\in C^1(\Omega,R)$, where $\Omega\subset R^n$ be a J set, if we define $\Phi:\Omega\to R^{n+1},\Phi(x)=(x^T,F(x))^T$, then $\mu_n(\Phi(\Omega))=\int_\Omega\sqrt{1+||\nabla F(x)||^2}dx$
+let $F\in C^1(\Omega,R)$, where $\Omega\subset R^n$ be a J set, if we define $\Phi:\Omega\to R^{n+1},\Phi(x)=(x^T,F(x))^T$, then $\mu_n(\Phi(\Omega))=\int_\Omega\sqrt{1+\vert \vert \nabla F(x)\vert \vert ^2}dx$
 
-Proof. it suffices to show $det(D\Phi)^TD\Phi=1+||\nabla F(x)||^2$
+Proof. it suffices to show $det(D\Phi)^TD\Phi=1+\vert \vert \nabla F(x)\vert \vert ^2$
 
-note that $\forall A\in M_{m\times n},B\in M_{n\times m},|I_n+BA|=|I_m+AB|$
+note that $\forall A\in M_{m\times n},B\in M_{n\times m},\vert I_n+BA\vert =\vert I_m+AB\vert $
 
-thus, $|(D\Phi)^TD\Phi|=|(I_n,\nabla F)(I_n,\nabla F)^T|=|I_n+\nabla F(\nabla F)^T|$
+thus, $\vert (D\Phi)^TD\Phi\vert =\vert (I_n,\nabla F)(I_n,\nabla F)^T\vert =\vert I_n+\nabla F(\nabla F)^T\vert $
 
-$=|1+(\nabla F)^T\nabla F|=1+||\nabla F(x)||^2$
+$=\vert 1+(\nabla F)^T\nabla F\vert =1+\vert \vert \nabla F(x)\vert \vert ^2$
 
 ### Def. surface integral
 
@@ -1985,7 +1985,7 @@ let $\Psi\in Diff(D,\Omega),\Phi\in Diff(\Omega,V),D\subset R^k$ be a J set, $\O
 
 Proof. $\int_{\Phi\circ \Psi(D)}F=\int_DF(z)\sqrt{det(D\Psi(x))^TD(\Phi\circ\Psi(x))^TD(\Phi\circ\Psi(x))D\Psi(x)}dx$
 
-$=\int_DF(z)\sqrt{detD(\Phi\circ\Psi(x))^TD(\Phi\circ\Psi(x))}|detD\Psi(x)|dx$
+$=\int_DF(z)\sqrt{detD(\Phi\circ\Psi(x))^TD(\Phi\circ\Psi(x))}\vert detD\Psi(x)\vert dx$
 
 $=\int_{\Psi(D)}F(z)\sqrt{det(D\Phi(y))^TD\Phi(y)}dy$
 
@@ -1995,7 +1995,7 @@ $=\int_\Omega F\circ \Phi(y)\sqrt{det(D\Phi(y))^TD\Phi(y)}dy=\int_{\Phi(\Omega)}
 
 ### Def. simplex
 
-$\lbrace (u_1, \dots ,u_d)\in R^d|u_j\geq 0,\sum_ju_j\leq 1\rbrace$ is called a d-simplex
+$\lbrace (u_1, \dots ,u_d)\in R^d\vert u_j\geq 0,\sum_ju_j\leq 1\rbrace$ is called a d-simplex
 
 ### Def. multi index
 
@@ -2069,9 +2069,9 @@ let $\omega=\sum_Ia_I(x)dx_I$ be a standard presentation of a k-form in $E\subse
 
 Proof. if not, $\exists a_J\neq 0,J=(j_1, \dots ,j_k)$, WLOG, $\exists x\in E,a_J(x)>0$
 
-by the continuity of $a_J,\exists\delta>0$ s.t. the box $G:=\lbrace y|||y-x||_\infty\leq\delta\rbrace$ satisfies $a_I(y)>0,\forall y\in G$
+by the continuity of $a_J,\exists\delta>0$ s.t. the box $G:=\lbrace y\vert \vert \vert y-x\vert \vert _\infty\leq\delta\rbrace$ satisfies $a_I(y)>0,\forall y\in G$
 
-define $D:=\lbrace x\in R^k|||x||_\infty\leq\delta\rbrace$ and $\Phi(u):=x+\sum_{r=1}^k u_re_{j_r}$
+define $D:=\lbrace x\in R^k\vert \vert \vert x\vert \vert _\infty\leq\delta\rbrace$ and $\Phi(u):=x+\sum_{r=1}^k u_re_{j_r}$
 
 note that if $I\neq J,det\frac{\partial x_I}{\partial u}=0$, and $det\frac{\partial x_J}{\partial u}=1$
 
@@ -2235,7 +2235,7 @@ Rmk. in other words, $F(x)=F(0)+Ax,A\in L(X,Y)$
 
 ### Def. oriented affine k-simplex
 
-let $p_0, \dots ,p_k$ are points in $R^n$, then the oriented affine k-simplex $\sigma=[p_0,p_1, \dots ,p_k]$ is defined to be a k-surface on the standard simplex $Q^k=\lbrace x\in R^k|x_j\geq 0,\sum_{j=1}^k x_j\leq 1\rbrace,\sigma(x):=p_0+\sum_{j=1}^k(p_j-p_0)$, also written as $\sigma(x)=p_0+Ax,A=(p_1-p_0, \dots ,p_j-p_0)\in M_{n\times k}(R)$
+let $p_0, \dots ,p_k$ are points in $R^n$, then the oriented affine k-simplex $\sigma=[p_0,p_1, \dots ,p_k]$ is defined to be a k-surface on the standard simplex $Q^k=\lbrace x\in R^k\vert x_j\geq 0,\sum_{j=1}^k x_j\leq 1\rbrace,\sigma(x):=p_0+\sum_{j=1}^k(p_j-p_0)$, also written as $\sigma(x)=p_0+Ax,A=(p_1-p_0, \dots ,p_j-p_0)\in M_{n\times k}(R)$
 
 if $i_0, \dots ,i_k$ be a permutation of $0, \dots ,k$, then we adopt the notation $[p_{i_0}, \dots ,p_{i_k}]=s(i_0, \dots ,i_k)[p_0, \dots ,p_k]$, if $s(i_0, \dots ,i_k)=1$, we say they have the same orientation, otherwise they have the opposite orientation
 
@@ -2253,7 +2253,7 @@ if $k\geq 1$, firstly, consider the permutation interchangeing $p_0$ and $p_j$, 
 
 let $\omega=a_I(x)dx_I,\int_{\overline{\sigma}}\omega=\int_{Q^k}(a_I\circ\sigma\circ T)(u)det\frac{\partial \overline{x_I}}{\partial u}du$
 
-$=\int_{Q^k}(a_I\circ\sigma)(v)|detDT|det\frac{\partial \overline{x_I}}{\partial u}dv$
+$=\int_{Q^k}(a_I\circ\sigma)(v)\vert detDT\vert det\frac{\partial \overline{x_I}}{\partial u}dv$
 
 note that $\frac{\partial \overline{x_I}}{\partial u}$ is a sub matrix of $(p_1-p_j, \dots ,p_{j-1}-p_j,p_0-p_j,p_{j+1}-p_j, \dots ,p_k-p_j)$
 
@@ -2261,7 +2261,7 @@ on the other hand, $\frac{\partial x_I}{\partial v}$ is a sub matrix of $(p_1-p_
 
 by the property of determinant, $\forall I, det\frac{\partial \overline{x_I}}{\partial u}=-det\frac{\partial x_I}{\partial v}$
 
-thus, $\int_{\overline{\sigma}}\omega=\int_{Q^k}(a_I\circ\sigma)(v)|detDT|(-det\frac{\partial x_I}{\partial v})dv=-\int_\sigma\omega$
+thus, $\int_{\overline{\sigma}}\omega=\int_{Q^k}(a_I\circ\sigma)(v)\vert detDT\vert (-det\frac{\partial x_I}{\partial v})dv=-\int_\sigma\omega$
 
 note that all the permutations can be combined by interchanging $p_j$ and $p_0$, and the times of changing is exactly $s(i_0, \dots ,i_k)$, thus, the statement is proved
 
@@ -2359,7 +2359,7 @@ Proof. let $\omega=d\eta,\int_{\Phi_1}\omega=\int_{\Phi_1}d\eta=\int_{\partial \
 
 ### Def. star-shaped 星形集
 
-a set $S\subset R^n$ is called star-shaped if $\exists x\in S$ s.t. $\forall y\in S,\lbrace x+t(y-x)|t\in[0,1]\rbrace\subset S$
+a set $S\subset R^n$ is called star-shaped if $\exists x\in S$ s.t. $\forall y\in S,\lbrace x+t(y-x)\vert t\in[0,1]\rbrace\subset S$
 
 ### Thm. Poincare lemma
 
@@ -2393,7 +2393,7 @@ $=k\sum_I(\int_0^1 t^{k-1}a_I(tx)dt)dx_I+\sum_I\sum_{m=1}^n(\int_0^1t^k\partial_
 
 $=\sum_I(\int_0^1a_I(tx)dt^k)dx_I+\sum_I(\int_0^1t^kda_I(tx)) dx_I$
 
-$=\sum_I(t^ka_I(tx))|_0^1dx_I=\sum_Ia_I(x)dx_I=\omega$
+$=\sum_I(t^ka_I(tx))\vert _0^1dx_I=\sum_Ia_I(x)dx_I=\omega$
 
 thus, if $\omega$ is closed, $\omega=d(L\omega)$, i.e. $\omega$ is exact
 
@@ -2441,9 +2441,9 @@ thus, $\vec{n}d\mu_2=(A,B,C)^Tdudv=(dy\wedge dz,dz\wedge dx,dx\wedge dy)^T$
 
 thus, $\int_{\Phi}(\nabla\times F)\cdot \vec{n}d\mu_2=\int_\Phi d\omega_F^{(1)}$
 
-let $\sigma=\partial\Phi=(x(t),y(t),z(t)),t\in[0,1]$, then $\vec{\nu}=\frac{\sigma'(t)}{||\sigma'(t)||}$
+let $\sigma=\partial\Phi=(x(t),y(t),z(t)),t\in[0,1]$, then $\vec{\nu}=\frac{\sigma'(t)}{\vert \vert \sigma'(t)\vert \vert }$
 
-note that $d\mu_1=||\sigma'(t)||dt$, thus, $\int_{\partial\Phi}F\cdot\vec{\nu}d\nu_1=\int_0^1 F(\sigma(t))\cdot \sigma'(t)dt$
+note that $d\mu_1=\vert \vert \sigma'(t)\vert \vert dt$, thus, $\int_{\partial\Phi}F\cdot\vec{\nu}d\nu_1=\int_0^1 F(\sigma(t))\cdot \sigma'(t)dt$
 
 $=\int_{\partial\Phi}(P,Q,R)^T\cdot(dx,dy,dz)^T=\int_{\partial\Phi}\omega_F^{(1)}$
 
@@ -2471,7 +2471,7 @@ define $N_j:=(-1)^j det\frac{\partial(x_1, \dots ,\widehat{x_j}, \dots ,x_n)}{\p
 
 then $\langle \vec{N},\frac{\partial x}{\partial u_j}\rangle=0$, thus, $\vec{N}\bot \frac{\partial x}{\partial u_j},\forall 1\leq j\leq n-1$
 
-i.e. $\vec{N}\bot T_{\partial\Phi}$, thus, $\vec{n}=\frac{\vec{N}}{||\vec{N}||}$
+i.e. $\vec{N}\bot T_{\partial\Phi}$, thus, $\vec{n}=\frac{\vec{N}}{\vert \vert \vec{N}\vert \vert }$
 
 introduce $\omega:=\sum_{j=1}^n(-1)^{j-1}f_j(x)dx_1\wedge  \dots \wedge \widehat{dx_j}\wedge \dots  \wedge dx_n$
 
@@ -2479,7 +2479,7 @@ on the one hand, $\int_{\partial\Phi}\omega=\int_{\partial\Phi}\sum_{j=1}^n(-1)^
 
 $=\int_{Q^{n-1}}\sum_{j=1}^nf_j\cdot N_jdu=\int_{Q^{n-1}} F\cdot\vec{N}du$
 
-$=\int_{Q^{n-1}}F\cdot\vec{n} ||\vec{N}||du=\int_{\partial\Phi}F\cdot\vec{n}d\mu_{n-1}$
+$=\int_{Q^{n-1}}F\cdot\vec{n} \vert \vert \vec{N}\vert \vert du=\int_{\partial\Phi}F\cdot\vec{n}d\mu_{n-1}$
 
 on the other hand, $\int_\Phi d\omega=\int_\Phi\sum_{j=1}^n\partial_jf_j(x)dx=\int_\Phi\nabla\cdot Fdx$
 
@@ -2489,14 +2489,14 @@ Rmk. for $n=3$, we can write it as $\int_{\partial\Phi}Pdy\wedge dz+Qdz\wedge dx
 
 ### Thm. coarea formula 余面积公式
 
-let $F\in C^1(\Omega,R),\Omega\subset R^n$ be compact, $\nabla F\neq 0$, let G be continuous on the compact set $F^{-1}([a,b])$, then $\int_{F^{-1}([a,b])}G||\nabla F||=\int_a^bdt\int_{F^{-1}(t)}Gd\mu_{n-1}$, and $\int_{F^{-1}([a,b])}G=\int_a^bdt\int_{F^{-1}(t)}\frac{G}{||\nabla F||}d\mu_{n-1}$
+let $F\in C^1(\Omega,R),\Omega\subset R^n$ be compact, $\nabla F\neq 0$, let G be continuous on the compact set $F^{-1}([a,b])$, then $\int_{F^{-1}([a,b])}G\vert \vert \nabla F\vert \vert =\int_a^bdt\int_{F^{-1}(t)}Gd\mu_{n-1}$, and $\int_{F^{-1}([a,b])}G=\int_a^bdt\int_{F^{-1}(t)}\frac{G}{\vert \vert \nabla F\vert \vert }d\mu_{n-1}$
 
-Proof. it suffices to prove the latter one, otherwise just let $G'=G||\nabla F||$
+Proof. it suffices to prove the latter one, otherwise just let $G'=G\vert \vert \nabla F\vert \vert $
 
-note that $F^{-1}(t)$ is a smooth level set consisting of finite smooth hypersurfaces that together inclose the bounded set $\lbrace x\in\Omega|F(x)>t\rbrace$
+note that $F^{-1}(t)$ is a smooth level set consisting of finite smooth hypersurfaces that together inclose the bounded set $\lbrace x\in\Omega\vert F(x)>t\rbrace$
 
-consider $\vec{h}//\nabla F,\Delta t=F(x+\vec{h})-F(x)=\nabla F(x)\cdot \vec{h}+o(||\vec{h}||)$
+consider $\vec{h}//\nabla F,\Delta t=F(x+\vec{h})-F(x)=\nabla F(x)\cdot \vec{h}+o(\vert \vert \vec{h}\vert \vert )$
 
-let $||\vec{h}||\to 0,dt=||\nabla F(x)||||\vec{h}||$
+let $\vert \vert \vec{h}\vert \vert \to 0,dt=\vert \vert \nabla F(x)\vert \vert \vert \vert \vec{h}\vert \vert $
 
-thus, $\int_{F^{-1}([a,b])}GdV=\int_{F^{-1}([a,b])}Gd||\vec{h}||d\mu_{n-1}=\int_a^bdt\int_{F^{-1}(t)}\frac{G}{||\nabla F||}d\mu_{n-1}$
+thus, $\int_{F^{-1}([a,b])}GdV=\int_{F^{-1}([a,b])}Gd\vert \vert \vec{h}\vert \vert d\mu_{n-1}=\int_a^bdt\int_{F^{-1}(t)}\frac{G}{\vert \vert \nabla F\vert \vert }d\mu_{n-1}$
