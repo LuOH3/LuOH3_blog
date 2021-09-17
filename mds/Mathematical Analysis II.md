@@ -1,11 +1,6 @@
----
-title: Mathematical Analysis II
-date: 2020-07-04 12:33:57
-categories: note
-mathjax: true
-output: pdf_document
-description: 本文为数学分析（二）的课堂内容整理，主要包括Riemann积分，度量空间和连续映射，多元函数微分学，多元函数积分学，以及微分形式的积分
----
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+本文为数学分析（二）的课堂内容整理，主要包括Riemann积分，度量空间和连续映射，多元函数微分学，多元函数积分学，以及微分形式的积分
+
 # Mathematical Analysis II
 
 ## Riemann integral

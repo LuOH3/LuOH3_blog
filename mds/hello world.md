@@ -1,8 +1,4 @@
----
-title: Hello World
-mathjax: true
-description: test
----
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 This is a test blog.
 
 $e ^ {i\pi} + 1 = 0$
