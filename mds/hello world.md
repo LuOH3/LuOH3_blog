@@ -3,6 +3,8 @@ This is a test blog.
 
 $e ^ {i\pi} + 1 = 0$
 
+$$ e^{i\pi}+1=0 $$
+
 A
 
 # A
