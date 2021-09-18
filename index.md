@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to LuOH3's homepage!
 
-You can use the [editor on GitHub](https://github.com/LuOH3/LuOH3.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+written by Markdown, powered by Github Pages
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+daily life
 
-```markdown
-Syntax highlighted code block
+[hello world](luoh3.github.io/mds/hello%20world.html)  《无处不在的数学》课程期中论文
 
-# Header 1
-## Header 2
-### Header 3
+### PDF
 
-- Bulleted
-- List
+mathematics discussions
 
-1. Numbered
-2. List
+[本福特定律](luoh3.github.io/pdfs/本福特定律.pdf)  《无处不在的数学》课程期中论文
 
-**Bold** and _Italic_ and `Code` text
+### Contact the author
 
-[Link](url) and ![Image](src)
-```
+Github: [homepage](github.com/LuOH3)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Email: [luqingyang123@126.com](luqingyang123@126.com)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LuOH3/LuOH3.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Steam friend ID: 288794126
