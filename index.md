@@ -24,8 +24,10 @@ written by Markdown, powered by Github Pages
 
 ### Contact the author
 
-Github: Click the button in the upper right corner
+Github: Click the button at the upper right corner
 
 Email: luqingyang123@126.com
 
 Steam friend ID: 288794126
+
+
