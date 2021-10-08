@@ -18,6 +18,10 @@ written by Markdown, powered by Github Pages
 
 [Tauber 定理](pdfs/数分读书报告2.pdf)  《数学分析》读书报告二
 
+### Cpp
+
+[模板](mds/templates.md)
+
 ### Contact the author
 
 Github: Click the button in the upper right corner
