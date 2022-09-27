@@ -24,9 +24,15 @@ written by Markdown, powered by Github Pages
 
 [模板](mds/templates.md)
 
+### Repository
+
+[PA_NEMU](https://github.com/LuOH3/PA_NEMU) 南京大学《计算机系统基础》NEMU实现
+
 ### Contact the author
 
 Github: Click the button at the upper right corner
+
+Codeforces: LuOH3
 
 Email: luqingyang123@126.com
 
