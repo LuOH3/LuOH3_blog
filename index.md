@@ -20,9 +20,7 @@ written by Markdown, powered by Github Pages
 
 [dictionary](pdfs/dictionary.pdf)   纯注释版词典
 
-### Cpp
-
-[模板](mds/templates.md)
+[ACM模板](pdfs/luogu.pdf)
 
 ### Repository
 
