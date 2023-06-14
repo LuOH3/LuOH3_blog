@@ -170,7 +170,21 @@ A
 白头偕老节节高。
 
 
-
+<script src="https://giscus.app/client.js"
+        data-repo="LuOH3/LuOH3.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk0MDcyNDI4NzU="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOGEYIe84CXL2M"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 
 
 
