@@ -1,3 +1,18 @@
 theme: jekyll-theme-architect
 kramdown:
   math_engine: mathjax
+
+[params.giscus]
+  data-repo="LuOH3/LuOH3.github.io"
+  data-repo-id="MDEwOlJlcG9zaXRvcnk0MDcyNDI4NzU="
+  data-category="Announcements"
+  data-category-id="DIC_kwDOGEYIe84CXL2M"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="light"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
