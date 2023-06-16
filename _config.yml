@@ -2,7 +2,7 @@ theme: jekyll-theme-architect
 kramdown:
   math_engine: mathjax
 
-[params.giscus]
+giscus:
   data-repo="LuOH3/LuOH3.github.io"
   data-repo-id="MDEwOlJlcG9zaXRvcnk0MDcyNDI4NzU="
   data-category="Announcements"
