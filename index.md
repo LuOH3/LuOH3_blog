@@ -8,15 +8,15 @@ written by Markdown, powered by Github Pages
 
 [随想](mds/随想.html)
 
-[本福特定律](pdfs/本福特定律.pdf)  《无处不在的数学》课程期中论文
+[本福特定律](mds/本福特定律.md)
 
-[公钥密码及其应用](pdfs/公钥密码及其应用.pdf)  《无处不在的数学》课程期末论文
+[公钥密码及其应用](mds/公钥密码及其应用.md)
 
-[Riemann-Zeta 函数](pdfs/数分读书报告1.pdf)  《数学分析》读书报告一
+[Riemann-Zeta 函数](mds/探究Riemann_Zeta函数.md)
 
-[Tauber 定理](pdfs/数分读书报告2.pdf)  《数学分析》读书报告二
+[Tauber 定理](mds/探究Tauber定理.md)
 
-[dictionary](pdfs/dictionary.pdf)   纯注释版词典
+[dictionary](mds/dictionary.md)
 
 [ACM模板](mds/luogu.md)
 
