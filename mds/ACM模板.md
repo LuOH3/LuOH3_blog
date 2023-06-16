@@ -10,10 +10,12 @@
     </script>
 </head>
 
+# ACM模板
+
 本文为team admax的ACM模板，主要为洛谷模板题的卡常，另有一些杂项。
-<object data="../pdfs/luogu.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="../pdfs/luogu.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../pdfs/luogu.pdf">Download PDF</a>.</p>
+<object data="../pdfs/ACM模板.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="../pdfs/ACM模板.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../pdfs/ACM模板.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 

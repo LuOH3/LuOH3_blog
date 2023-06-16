@@ -4,21 +4,21 @@ written by Markdown, powered by Github Pages
 
 ### Blog
 
-[hello world](mds/hello%20world.html)
+[Hello world](mds/Hello_world.md)
 
-[随想](mds/随想.html)
+[随想](mds/随想.md)
 
 [本福特定律](mds/本福特定律.md)
 
 [公钥密码及其应用](mds/公钥密码及其应用.md)
 
-[Riemann-Zeta 函数](mds/探究Riemann_Zeta函数.md)
+[探究 Riemann-Zeta 函数](mds/探究Riemann_Zeta函数.md)
 
-[Tauber 定理](mds/探究Tauber定理.md)
+[探究 Tauber 定理](mds/探究Tauber定理.md)
 
-[dictionary](mds/dictionary.md)
+[ACM词典](mds/ACM词典.md)
 
-[ACM模板](mds/luogu.md)
+[ACM模板](mds/ACM模板.md)
 
 ### Repository
 

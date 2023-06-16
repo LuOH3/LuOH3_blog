@@ -10,10 +10,12 @@
     </script>
 </head>
 
+# ACM词典
+
 本文是为ACM线下赛准备的便携版词典，是网上随便找的无注释词典通过程序简单处理得到的，选择标准为包含'acyclic'一词。
-<object data="../pdfs/dictionary.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="../pdfs/dictionary.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../pdfs/dictionary.pdf">Download PDF</a>.</p>
+<object data="../pdfs/ACM词典.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="../pdfs/ACM词典.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../pdfs/ACM词典.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 

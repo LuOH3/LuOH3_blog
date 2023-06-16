@@ -10,6 +10,8 @@
     </script>
 </head>
 
+# 探究Riemann-Zeta函数
+
 本文为大二上《数学分析III》课程读书报告一。
 <object data="../pdfs/探究Riemann_Zeta函数.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="../pdfs/探究Riemann_Zeta函数.pdf">

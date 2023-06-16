@@ -9,6 +9,9 @@
         });
     </script>
 </head>
+
+# Hello world
+
 This is a test blog.
 
 $e ^ {i\pi} + 1 = 0$
