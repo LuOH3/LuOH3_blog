@@ -1,3 +1,7 @@
+---
+title: LuOH3's homepage
+---
+
 ## Welcome to LuOH3's homepage!
 
 written by Markdown, powered by Github Pages
